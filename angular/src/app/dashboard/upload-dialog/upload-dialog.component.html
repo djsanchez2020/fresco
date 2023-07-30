@@ -13,7 +13,7 @@
   <!-- Display #fileDrop div tag if user not selected the file. -->
   <!-- Do not display #fileDrop div tag if user selected the file. -->
   <!-- on Click #fileDrop div tag should call openFileExplorer() -->
-  <div class='dragDrop' id='fileDrop' (click)="openFileExplorer()" (drop)="fileDrop($event)">
+  <div *ngIf="!file" class='dragDrop' id='fileDrop' (click)="openFileExplorer()" (drop)="fileDrop($event)">
     <div id='dragOff'>
       <mat-icon class='fileIcon'>insert_drive_file</mat-icon>
       <br> Click here to select the CSV file
