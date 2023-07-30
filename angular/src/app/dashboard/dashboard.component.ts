@@ -61,7 +61,7 @@ export class DashboardComponent implements OnInit {
     } else if (flag === 1) {
       if (this.monthIndex < 11) {
         this.monthIndex++;
-      } else {
+      } else if(this.year < 2020){
         this.monthIndex = 0;
         this.year++;
       }
