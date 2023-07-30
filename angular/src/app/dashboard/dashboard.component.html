@@ -77,7 +77,7 @@
               mat-select should contain id as "cityDropDown"
               The selected city should be assigned to "selectedCity" variable 
             -->
-            <mat-select id="cityDropDown" placeholder="Select" [(value)]="selectedCity" (selectionChange)="getCities()">
+            <mat-select id="cityDropDown" placeholder="Select" [(value)]="selectedCity">
               <mat-option *ngFor="let city of cities" [value]="city.cityName">
                 {{ city.cityName }}
               </mat-option>
