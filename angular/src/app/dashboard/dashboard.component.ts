@@ -109,8 +109,7 @@ export class DashboardComponent implements OnInit {
    * return false to enable
    */
   yearNavigatorValidation(): boolean {
-    
-    if(this.year > 2019){
+    if(this.year >= 2020){
       return true;
     }else{
       return false;
