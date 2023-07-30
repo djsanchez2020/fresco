@@ -124,6 +124,7 @@ export class DashboardComponent implements OnInit {
       return true;
     }else{
      console.error("fallo", currentDate); 
+     return true;
     }/*else if (this.year <= currentDate.getFullYear()) {
       return true;
     } else {
