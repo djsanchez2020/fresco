@@ -61,7 +61,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
    */
   getSelectedHolidayInfo() {
     const currentDate = new Date();
-    const selectedDateObj = new Date(this.selectedDate);
+    const selectedDateObj = new Date(this.formatDate(this.selectedDate));
     if (selectedDateObj > currentDate) {
       this.editorFlag = true;
       this.holidayServiceObj.getSelectedHolidayInfo(this.selectedDate, this.city).subscribe(
@@ -141,4 +141,27 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
       }
     );
   }
+
+
+  formatDate(inputDate) {
+    // Check if the inputDate already has the correct format (YYYY/MM/DD)
+    if (/^\d{4}\/\d{2}\/\d{2}$/.test(inputDate)) {
+      return inputDate; // Return the inputDate as it is already in the correct format
+    }
+  
+    // Split the input date string into day, month, and year parts
+    const parts = inputDate.split('/');
+    const day = parts[0];
+    const month = parts[1];
+    const year = parts[2];
+  
+    // Create a new Date object with the given parts (Note: month is 0-indexed in JavaScript Date)
+    const dateObj = new Date(year, month - 1, day);
+  
+    // Get the formatted date string in 'YYYY/MM/DD' format
+    const formattedDate = dateObj.toISOString().split('T')[0];
+  
+    return formattedDate;
+  }
+  
 }
