@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:07:27" id="0" hostname="d8ea28e3f92e" tests="10" errors="1" failures="10" time="3.702">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:11:51" id="0" hostname="d8ea28e3f92e" tests="32" errors="0" failures="5" time="5.292">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="AuthenticationComponent HTML file Sign in button to be enabled" time="0.697" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+  <testcase name="TestHost when city change=> editor should call getSelectedHolidayInfo" time="0.208" classname=".TestHost">
+    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
+          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
+1. If 'mat-error' is an Angular component, then verify that it is part of this module.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
+          &lt;!-- Display error message here --&gt;
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
+          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
+          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
     at &lt;Jasmine&gt;
     at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
     at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
@@ -27,17 +26,16 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
+          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
+1. If 'mat-error' is an Angular component, then verify that it is part of this module.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
+          &lt;!-- Display error message here --&gt;
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
+          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
+          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
     at &lt;Jasmine&gt;
     at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
     at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
@@ -50,9 +48,9 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
+    <failure type="">TypeError: Cannot read property 'vw' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:173:38)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:560:34)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
@@ -62,547 +60,95 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Test1 display error message for password text field" time="0.405" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+  <testcase name="HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday" time="0.304" classname=".HolidayEditorComponent TS file">
+    <failure type="">TypeError: this.holidayServiceObj.userDate$.subscribe is not a function
+error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: Object({ factory: Function, nodeFlags: 34193409, rootNodeFlags: 33554433, nodeMatchedQueries: 0, flags: 0, nodes: [ Object({ nodeIndex: 0, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, checkIndex: 0, flags: 33554433, childFlags: 638976, directChildFlags: 638976, childMatchedQueries: 0, matchedQueries: Object({  }), matchedQueryIds: 0, references: Object({  }), ngContentIndex: null, childCount: 1, bindings: [  ], bindingFlags: 0, outputs: [  ], element: Object({ ns: '', name: 'app-holiday-editor', attrs: [  ], template: null, componentProvider: Object({ nodeIndex: 1, parent: &lt;circular reference: Object&gt;, renderParent: &lt;circular reference: Object&gt;, bindingIndex: 0, outputIndex: 0, checkIndex: 1, flags: 638976, childFlags: 0, directChildFlags: 0, childMatchedQueries: 0, matchedQueries: Object, matchedQueryIds: 0, references: Object, ngContentIndex: -1, childCount: 0, bindings: Array, bindingFlags: 0, outputs ...
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'getAllHarnesses' of undefined
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:249:36
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:247:75)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at HolidayEditorComponent.ngOnInit (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:50:38)
+    at checkAndUpdateDirectiveInline (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32822:1)
+    at checkAndUpdateNodeInline (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45557:1)
+    at checkAndUpdateNode (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45496:1)
+    at debugCheckAndUpdateNode (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46519:36)
+    at debugCheckDirectivesFn (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46462:1)
+    at Object.eval [as updateDirectives] (ng:///DynamicTestModule/HolidayEditorComponent_Host.ngfactory.js:8:5)
+    at Object.debugUpdateDirectives [as updateDirectives] (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46450:1)
+    at checkAndUpdateView (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45461:1)
+    at callWithDebugContext (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46823:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Sign in button should call validate()" time="0.444" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+  <testcase name="HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo " time="0.227" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response " time="0.185" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday" time="0.163" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign response data to holidayObj" time="0.2" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo " time="0.218" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response " time="0.206" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty" time="0.172" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be false" time="0.176" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.174" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.185" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday" time="0.149" classname=".HolidayEditorComponent TS file">
+    <failure type="">Error: Expected object not to have properties
+    date: '02/06/2020'
+    id: 134
+    city: 'hhjv'
+    holidayName: 'TD'
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:270:40)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+    <failure type="">Error: Expected 'TD' to be null.
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:191:38)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:271:70)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Test1 display error message for username text field" time="0.367" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+  <testcase name="HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.153" classname=".HolidayEditorComponent TS file">
+    <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:283:21)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+    <failure type="">Error: Expected '20/02/2019' to be '02/06/2020'.
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'getAllHarnesses' of undefined
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:211:36
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:209:75)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:284:42)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Test2 display error message for username text field" time="0.4" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj" time="0.098" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.147" classname=".HolidayEditorComponent TS file">
+    <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
+    <failure type="">Error: Expected '20/02/2019' to be '05/06/2020'.
     at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'getAllHarnesses' of undefined
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:230:36
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:228:75)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:298:42)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file should show snack bar" time="0.284" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:101:38
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:99:45)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-</failure>
-  </testcase>
-  <testcase name="AuthenticationComponent HTML file Sign in button to be disabled" time="0.279" classname=".AuthenticationComponent HTML file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:122:38)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="AuthenticationComponent TS file validate() should call holidayServiceObj.signIn" time="0.319" classname=".AuthenticationComponent TS file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'validate' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:62:17)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="AuthenticationComponent TS file validate() should call holidayServiceObj.signIn" time="0.25" classname=".AuthenticationComponent TS file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'signInForm' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:68:17)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="AuthenticationComponent TS file shoud navigate" time="0.257" classname=".AuthenticationComponent TS file">
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
-3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
-    &lt;/div&gt;
-    &lt;app-holiday-view *ngIf='selectedCity' [ERROR -&gt;][monthIndex]='monthIndex' [year]='year' [city]='selectedCity'&gt;
-    &lt;/app-holiday-view&gt;
-  &lt;/div&gt;
-1. If 'app-holiday-view' is an Angular component and it has 'year' input, then verify that it is part of this module.
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'monthIndex' since it isn't a known property of 'app-holiday-view'.
-"): ng:///DynamicTestModule/DashboardComponent.html@94:43, Can't bind to 'year' since it isn't a known property of 'app-holiday-view'.
-2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to th ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">Failed: Cannot read property 'signInForm' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:84:17)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:302:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.runGuarded (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:134:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:885:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:823:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should not call getSelectedHolidayInfo() in HolidayService  when selected date is lesser than current date" time="0.138" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService" time="0.138" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true" time="0.107" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday" time="0.128" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed" time="0.186" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Add button to be disabled" time="0.138" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Add button to be enabled" time="0.131" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Add button should call addHoliday()" time="0.148" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Save button to be disabled" time="0.128" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Save button to be enabled" time="0.164" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Save button should call updateHoliday()" time="0.191" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file New entry-> Add button should be displayed, save and remove button should not be displayed" time="0.155" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file remove button to be enabled" time="0.142" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Test2 display error message for holidayName text field" time="0.158" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Remove button should call removeHoliday()" time="0.143" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Test1 display error message for holidayName text field" time="0.132" classname=".HolidayEditorComponent HTML file"/>
   <system-out>
     <![CDATA[
 ]]>
