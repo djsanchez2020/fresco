@@ -1,75 +1,9 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T20:33:27" id="0" hostname="d8ea28e3f92e" tests="34" errors="0" failures="11" time="8.113">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T20:42:42" id="0" hostname="d8ea28e3f92e" tests="34" errors="0" failures="10" time="8.017">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="DashboardComponent Test HTML Year navigation, right button should call navigationArrowYear function" time="0.475" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Year navigation, right button to be disabled" time="0.304" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML when navigate month, year value should change on button click" time="0.26" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Year navigation, right button to be enabled" time="0.285" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Month navigation, right button should call navigationArrowMonth function" time="0.252" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Month navigation, left button should call navigationArrowMonth function" time="0.324" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Year navigation, left button should call navigationArrowYear function" time="0.329" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Upload button should call openUploadDialog" time="0.241" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Month Value should change on button click" time="0.284" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML year Value should change on button click" time="0.234" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Test2 selected city should be assigned to selectedCity" time="0.327" classname=".DashboardComponent Test HTML">
-    <failure type="">RangeError: Invalid time value
-error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: Object({ factory: Function, nodeFlags: 34193409, rootNodeFlags: 33554433, nodeMatchedQueries: 0, flags: 0, nodes: [ Object({ nodeIndex: 0, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, checkIndex: 0, flags: 33554433, childFlags: 638976, directChildFlags: 638976, childMatchedQueries: 0, matchedQueries: Object({  }), matchedQueryIds: 0, references: Object({  }), ngContentIndex: null, childCount: 1, bindings: [  ], bindingFlags: 0, outputs: [  ], element: Object({ ns: '', name: 'app-holiday-editor', attrs: [ Array ], template: null, componentProvider: Object({ nodeIndex: 1, parent: &lt;circular reference: Object&gt;, renderParent: &lt;circular reference: Object&gt;, bindingIndex: 0, outputIndex: 0, checkIndex: 1, flags: 638976, childFlags: 0, directChildFlags: 0, childMatchedQueries: 0, matchedQueries: Object, matchedQueryIds: 0, references: Object, ngContentIndex: -1, childCount: 0, bindings: Array, bindingFlags: 8,  ...
-    at &lt;Jasmine&gt;
-    at HolidayEditorComponent.formatDate (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:182:35)
-    at HolidayEditorComponent.getSelectedHolidayInfo (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:82:43)
-    at HolidayEditorComponent.ngOnChanges (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:38:12)
-    at checkAndUpdateDirectiveInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32818:1)
-    at checkAndUpdateNodeInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45557:1)
-    at checkAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45496:1)
-    at debugCheckAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46519:36)
-    at debugCheckDirectivesFn (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46462:1)
-    at Object.eval [as updateDirectives] (ng:///DynamicTestModule/DashboardComponent.ngfactory.js:62:5)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Test1 selected city should be assigned to selectedCity" time="0.347" classname=".DashboardComponent Test HTML">
-    <failure type="">RangeError: Invalid time value
-error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: Object({ factory: Function, nodeFlags: 34193409, rootNodeFlags: 33554433, nodeMatchedQueries: 0, flags: 0, nodes: [ Object({ nodeIndex: 0, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, checkIndex: 0, flags: 33554433, childFlags: 638976, directChildFlags: 638976, childMatchedQueries: 0, matchedQueries: Object({  }), matchedQueryIds: 0, references: Object({  }), ngContentIndex: null, childCount: 1, bindings: [  ], bindingFlags: 0, outputs: [  ], element: Object({ ns: '', name: 'app-holiday-editor', attrs: [ Array ], template: null, componentProvider: Object({ nodeIndex: 1, parent: &lt;circular reference: Object&gt;, renderParent: &lt;circular reference: Object&gt;, bindingIndex: 0, outputIndex: 0, checkIndex: 1, flags: 638976, childFlags: 0, directChildFlags: 0, childMatchedQueries: 0, matchedQueries: Object, matchedQueryIds: 0, references: Object, ngContentIndex: -1, childCount: 0, bindings: Array, bindingFlags: 8,  ...
-    at &lt;Jasmine&gt;
-    at HolidayEditorComponent.formatDate (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:182:35)
-    at HolidayEditorComponent.getSelectedHolidayInfo (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:82:43)
-    at HolidayEditorComponent.ngOnChanges (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:38:12)
-    at checkAndUpdateDirectiveInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32818:1)
-    at checkAndUpdateNodeInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45557:1)
-    at checkAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45496:1)
-    at debugCheckAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46519:36)
-    at debugCheckDirectivesFn (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46462:1)
-    at Object.eval [as updateDirectives] (ng:///DynamicTestModule/DashboardComponent.ngfactory.js:62:5)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Month navigation, right button to be enabled" time="0.365" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:478:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML onclick Upload button open Upload-Dialog" time="0.222" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Sign Out button should call signOut function" time="0.253" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Month navigation, right button to be disabled" time="0.211" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:453:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:460:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Test1 Mat-select to display cities" time="0.2" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Test2 Mat-select to display cities" time="0.248" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test TS file uploadDialog should call uploadFile function in Holiday service when afterClosed response contain File Object" time="0.202" classname=".DashboardComponent Test TS file">
+  <testcase name="DashboardComponent Test TS file uploadDialog should not call uploadFile function in Holiday service when afterClosed response does not contain File Object" time="0.495" classname=".DashboardComponent Test TS file">
     <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
 error properties: Object({ ngComponent: Function })
     at noComponentFactoryError (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
@@ -78,69 +12,13 @@ error properties: Object({ ngComponent: Function })
     at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
     at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
     at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:155:35)
-    at http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:337:17
-    at &lt;Jasmine&gt;
-    at http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file ngOnInit to Initialize monthIndex and year" time="0.286" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file After uploading file notify holiday view component using monthComponentNotify" time="0.215" classname=".DashboardComponent Test TS file">
-    <failure type="">Failed: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-error properties: Object({ ngComponent: Function })
-Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-    at noComponentFactoryError (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
-    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
-    at CdkPortalOutlet.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
-    at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
-    at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
-    at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:155:35)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:361:17)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at AsyncTestZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file uploadDialog should not call uploadFile function in Holiday service when afterClosed response does not contain File Object" time="0.192" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-error properties: Object({ ngComponent: Function })
-    at noComponentFactoryError (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
-    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
-    at CdkPortalOutlet.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
-    at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
-    at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
-    at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:155:35)
+    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:183:35)
     at http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:348:19
     at &lt;Jasmine&gt;
     at http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
 </failure>
   </testcase>
-  <testcase name="DashboardComponent Test TS file Test3 -> navigationArrowMonth arrow " time="0.214" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file signOut should use signOut service" time="0.17" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.181" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return true" time="0.147" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:239:52)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:245:52)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:251:52)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file navigationArrowYear arrow" time="0.165" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.167" classname=".DashboardComponent Test TS file">
+  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.464" classname=".DashboardComponent Test TS file">
     <failure type="">Error: Expected false to be truthy.
     at &lt;Jasmine&gt;
     at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:285:51)
@@ -154,15 +32,7 @@ error properties: Object({ ngComponent: Function })
     at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return false" time="0.158" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:276:52)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file uploadDialog should open upload dialog" time="0.183" classname=".DashboardComponent Test TS file">
+  <testcase name="DashboardComponent Test TS file uploadDialog should open upload dialog" time="0.326" classname=".DashboardComponent Test TS file">
     <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
 error properties: Object({ ngComponent: Function })
     at noComponentFactoryError (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
@@ -171,16 +41,145 @@ error properties: Object({ ngComponent: Function })
     at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
     at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
     at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:155:35)
+    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:183:35)
     at http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:325:17
     at &lt;Jasmine&gt;
     at http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
 </failure>
   </testcase>
-  <testcase name="DashboardComponent Test TS file ngOnInit to load cities" time="0.171" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file getCities to get the city list and assign the response to cities" time="0.181" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file Test1 -> navigationArrowMonth arrow " time="0.162" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file Test2 -> navigationArrowMonth arrow " time="0.158" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return false" time="0.306" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:260:52)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:264:52)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:270:52)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:276:52)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.255" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file navigationArrowYear arrow" time="0.284" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file Test3 -> navigationArrowMonth arrow " time="0.271" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return true" time="0.255" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file Test1 -> navigationArrowMonth arrow " time="0.258" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file signOut should use signOut service" time="0.251" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file ngOnInit to load cities" time="0.186" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file uploadDialog should call uploadFile function in Holiday service when afterClosed response contain File Object" time="0.2" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+error properties: Object({ ngComponent: Function })
+    at noComponentFactoryError (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
+    at CdkPortalOutlet.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
+    at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
+    at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
+    at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
+    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:183:35)
+    at http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:337:17
+    at &lt;Jasmine&gt;
+    at http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file Test2 -> navigationArrowMonth arrow " time="0.237" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file After uploading file notify holiday view component using monthComponentNotify" time="0.192" classname=".DashboardComponent Test TS file">
+    <failure type="">Failed: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+error properties: Object({ ngComponent: Function })
+Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+    at noComponentFactoryError (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
+    at CdkPortalOutlet.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
+    at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
+    at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
+    at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
+    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:183:35)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:361:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at AsyncTestZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file getCities to get the city list and assign the response to cities" time="0.194" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file ngOnInit to Initialize monthIndex and year" time="0.268" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test HTML Month navigation, right button to be enabled" time="0.196" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:478:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Test1 selected city should be assigned to selectedCity" time="0.308" classname=".DashboardComponent Test HTML">
+    <failure type="">RangeError: Invalid time value
+error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: Object({ factory: Function, nodeFlags: 34193409, rootNodeFlags: 33554433, nodeMatchedQueries: 0, flags: 0, nodes: [ Object({ nodeIndex: 0, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, checkIndex: 0, flags: 33554433, childFlags: 638976, directChildFlags: 638976, childMatchedQueries: 0, matchedQueries: Object({  }), matchedQueryIds: 0, references: Object({  }), ngContentIndex: null, childCount: 1, bindings: [  ], bindingFlags: 0, outputs: [  ], element: Object({ ns: '', name: 'app-holiday-editor', attrs: [ Array ], template: null, componentProvider: Object({ nodeIndex: 1, parent: &lt;circular reference: Object&gt;, renderParent: &lt;circular reference: Object&gt;, bindingIndex: 0, outputIndex: 0, checkIndex: 1, flags: 638976, childFlags: 0, directChildFlags: 0, childMatchedQueries: 0, matchedQueries: Object, matchedQueryIds: 0, references: Object, ngContentIndex: -1, childCount: 0, bindings: Array, bindingFlags: 8,  ...
+    at &lt;Jasmine&gt;
+    at HolidayEditorComponent.formatDate (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:182:35)
+    at HolidayEditorComponent.getSelectedHolidayInfo (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:82:43)
+    at HolidayEditorComponent.ngOnChanges (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:38:12)
+    at checkAndUpdateDirectiveInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32818:1)
+    at checkAndUpdateNodeInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45557:1)
+    at checkAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45496:1)
+    at debugCheckAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46519:36)
+    at debugCheckDirectivesFn (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46462:1)
+    at Object.eval [as updateDirectives] (ng:///DynamicTestModule/DashboardComponent.ngfactory.js:62:5)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Month Value should change on button click" time="0.226" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Test1 Mat-select to display cities" time="0.225" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Month navigation, right button to be disabled" time="0.195" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:453:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:460:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML year Value should change on button click" time="0.174" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Year navigation, right button should call navigationArrowYear function" time="0.224" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Month navigation, left button should call navigationArrowMonth function" time="0.171" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML onclick Upload button open Upload-Dialog" time="0.204" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Year navigation, right button to be disabled" time="0.164" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Test2 Mat-select to display cities" time="0.257" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML when navigate month, year value should change on button click" time="0.2" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Year navigation, left button should call navigationArrowYear function" time="0.168" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Upload button should call openUploadDialog" time="0.179" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Sign Out button should call signOut function" time="0.151" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Year navigation, right button to be enabled" time="0.144" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Test2 selected city should be assigned to selectedCity" time="0.206" classname=".DashboardComponent Test HTML">
+    <failure type="">RangeError: Invalid time value
+error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: Object({ factory: Function, nodeFlags: 34193409, rootNodeFlags: 33554433, nodeMatchedQueries: 0, flags: 0, nodes: [ Object({ nodeIndex: 0, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, checkIndex: 0, flags: 33554433, childFlags: 638976, directChildFlags: 638976, childMatchedQueries: 0, matchedQueries: Object({  }), matchedQueryIds: 0, references: Object({  }), ngContentIndex: null, childCount: 1, bindings: [  ], bindingFlags: 0, outputs: [  ], element: Object({ ns: '', name: 'app-holiday-editor', attrs: [ Array ], template: null, componentProvider: Object({ nodeIndex: 1, parent: &lt;circular reference: Object&gt;, renderParent: &lt;circular reference: Object&gt;, bindingIndex: 0, outputIndex: 0, checkIndex: 1, flags: 638976, childFlags: 0, directChildFlags: 0, childMatchedQueries: 0, matchedQueries: Object, matchedQueryIds: 0, references: Object, ngContentIndex: -1, childCount: 0, bindings: Array, bindingFlags: 8,  ...
+    at &lt;Jasmine&gt;
+    at HolidayEditorComponent.formatDate (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:182:35)
+    at HolidayEditorComponent.getSelectedHolidayInfo (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:82:43)
+    at HolidayEditorComponent.ngOnChanges (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.ts:38:12)
+    at checkAndUpdateDirectiveInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32818:1)
+    at checkAndUpdateNodeInline (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45557:1)
+    at checkAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45496:1)
+    at debugCheckAndUpdateNode (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46519:36)
+    at debugCheckDirectivesFn (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46462:1)
+    at Object.eval [as updateDirectives] (ng:///DynamicTestModule/DashboardComponent.ngfactory.js:62:5)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Month navigation, right button should call navigationArrowMonth function" time="0.183" classname=".DashboardComponent Test HTML"/>
   <system-out>
     <![CDATA[HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
 Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
@@ -190,7 +189,7 @@ Error: No component factory found for UploadDialogComponent. Did you add it to @
     at MatDialogContainer.attachComponentPortal (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
     at MatDialog._attachDialogContent (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
     at MatDialog.open (http://localhost:9877/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:155:35)
+    at DashboardComponent.uploadDialog (http://localhost:9877/_karma_webpack_/src/app/dashboard/dashboard.component.ts:183:35)
     at Object.eval [as handleEvent] (ng:///DynamicTestModule/DashboardComponent.ngfactory.js:236:31)
     at handleEvent (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45183:77)
     at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46823:1)

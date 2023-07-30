@@ -88,30 +88,24 @@ export class DashboardComponent implements OnInit {
    */
   monthNavigatorValidation(): boolean {
 
-    let testDate = this.transformDateFormat(new Date('2019/11/23'));
-    let testDate2 = this.transformDateFormat(new Date('2019/5/23'));
-    let testDate3 = this.transformDateFormat(new Date('2019/12/23'));
-    
-    const currentDate = this.transformDateFormat(new Date());
+    // Get the current date
+    const currentDate = new Date();
 
-    if(currentDate == testDate || currentDate == testDate2 || currentDate == testDate3 ){
-      return true;
-    }
+    // Get the current month and year from the current date
+    const currentMonth = currentDate.getMonth() + 1; // January is 0, so we add 1 to get 1-12 range
+    const currentYear = currentDate.getFullYear();
 
-    /*if(currentDate == testDate2){
-      return false;
-    }*/
+    // Define the valid range of months (1-12) and years (e.g., 2019, 2020, etc.)
+    const validMonths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    const validYears = [2019, 2020, 2021]; // Add more years if needed
 
+    // Check if the provided monthIndex and year fall within the valid range
+    const isValidMonth = validMonths.includes(this.monthIndex);
+    const isValidYear = validYears.includes(this.year);
 
-    const currentDate2 = new Date();
-    const currentYear = currentDate2.getFullYear();
-    const currentMonth = currentDate2.getMonth();
-  
-    if (this.year <= currentYear && this.monthIndex < currentMonth) {
-      return true;
-    } else {
-      return false; // Return false in all other cases
-    }
+    // Return true if both monthIndex and year are valid
+    return isValidMonth && isValidYear;
+
   }
 
   monthNavigatorValidationDisabled(): boolean {
