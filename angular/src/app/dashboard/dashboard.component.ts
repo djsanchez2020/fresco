@@ -87,9 +87,6 @@ export class DashboardComponent implements OnInit {
    * Return false to enable
    */
   monthNavigatorValidation(): boolean {
-
-    return false;
-
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
@@ -132,7 +129,6 @@ export class DashboardComponent implements OnInit {
     let testDate2 = this.transformDateFormat(new Date('2019/12/23'));
     let testDate3 = this.transformDateFormat(new Date('2018/05/23'));
     let testDate4 = this.transformDateFormat(new Date('2020/11/23'));
-    
     
     const currentDate = this.transformDateFormat(new Date());
 
