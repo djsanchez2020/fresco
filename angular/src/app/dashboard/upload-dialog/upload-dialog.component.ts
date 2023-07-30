@@ -8,8 +8,8 @@ import { HolidayService } from 'src/app/services/holiday.service';
   styleUrls: ['./upload-dialog.component.css']
 })
 export class UploadDialogComponent implements OnInit, AfterViewInit {
-
   file: File = null;
+
   constructor(public dialogRef: MatDialogRef<UploadDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data, private holidayServiceObj: HolidayService) {
 
@@ -18,17 +18,17 @@ export class UploadDialogComponent implements OnInit, AfterViewInit {
   ngOnInit() {
 
   }
+
   ngAfterViewInit() {
-    // Listners for darg behaviour
+    // Listeners for drag behavior
     if (!this.file) {
       document.getElementById('fileDrop').addEventListener('dragover', (event) => {
         event.preventDefault();
       });
-      document.getElementById('fileDrop').addEventListener('dragover', this.dragenter);
-      document.getElementById('fileDrop').addEventListener('dragleave', this.dragleave);
-      document.getElementById('fileDrop').addEventListener('drop', this.dragleave);
+      document.getElementById('fileDrop').addEventListener('dragenter', this.dragenter.bind(this));
+      document.getElementById('fileDrop').addEventListener('dragleave', this.dragleave.bind(this));
+      document.getElementById('fileDrop').addEventListener('drop', this.fileDrop.bind(this));
     }
-
   }
 
   dragenter(event) {
@@ -50,13 +50,13 @@ export class UploadDialogComponent implements OnInit, AfterViewInit {
    * Using #fileUpload id open the file explorer to upload file
    */
   openFileExplorer() {
+    document.getElementById('fileUpload').click();
   }
 
   fileDrop(fileUploadEvent: DragEvent) {
     fileUploadEvent.preventDefault();
 
     if (fileUploadEvent.dataTransfer.items) {
-
       // DataTransferItemList interface
       if (fileUploadEvent.dataTransfer.items[0].kind === 'file') {
         this.file = fileUploadEvent.dataTransfer.items[0].getAsFile();
@@ -69,11 +69,14 @@ export class UploadDialogComponent implements OnInit, AfterViewInit {
 
   /*
    * closeDialog()
-   * if userResponse is true =>close the dialog and send file to dashboard.
+   * if userResponse is true => close the dialog and send file to dashboard.
    * if userResponse is false => close the dialog
   */
   closeDialog(userResponse) {
-
+    if (userResponse) {
+      this.dialogRef.close(this.file);
+    } else {
+      this.dialogRef.close();
+    }
   }
-
 }
