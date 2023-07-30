@@ -15,10 +15,10 @@ export class DashboardComponent implements OnInit {
   selectedCity: string = null;
 
   // use year to display year
-  year;
+  year: number;
 
   // add month names in monthInAlphabets Array
-  monthInAlphabets:Array<any> = [];
+  monthInAlphabets: Array<string> = [];
 
   // Use month index to get month in monthInAlphabets
   monthIndex = 0;
@@ -27,7 +27,11 @@ export class DashboardComponent implements OnInit {
   cities: Array<any>;
 
   constructor(public dialog: MatDialog, private holidayServiceObj: HolidayService, private route: Router) {
-
+    // Add month names to the array
+    this.monthInAlphabets = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
   }
 
   /**
@@ -35,8 +39,10 @@ export class DashboardComponent implements OnInit {
    * get cities
    */
   ngOnInit() {
-
-
+    const setDate = new Date();
+    this.monthIndex = setDate.getMonth();
+    this.year = setDate.getFullYear();
+    this.getCities();
   }
 
   /**
@@ -44,9 +50,22 @@ export class DashboardComponent implements OnInit {
    *  if "flag" is 0 which means that user click left arrow key <-
    *  if "flag" is 1 which means that user click right arrow key ->
    */
-  navigationArrowMonth(flag) {
-
-  
+  navigationArrowMonth(flag: number) {
+    if (flag === 0) {
+      if (this.monthIndex > 0) {
+        this.monthIndex--;
+      } else {
+        this.monthIndex = 11;
+        this.year--;
+      }
+    } else if (flag === 1) {
+      if (this.monthIndex < 11) {
+        this.monthIndex++;
+      } else {
+        this.monthIndex = 0;
+        this.year++;
+      }
+    }
   }
 
   /**
@@ -54,8 +73,12 @@ export class DashboardComponent implements OnInit {
    *  if "flag" is 0 which means that user onclick left arrow key <-
    *  if "flag" is 1 which means that user onclick right arrow key ->
    */
-  navigationArrowYear(flag) {
- 
+  navigationArrowYear(flag: number) {
+    if (flag === 0) {
+      this.year--;
+    } else if (flag === 1) {
+      this.year++;
+    }
   }
 
   /**
@@ -63,9 +86,15 @@ export class DashboardComponent implements OnInit {
    * Return true to disable
    * Return false to enable
    */
-  monthNavigatorValidation() {
-  
-    return null;
+  monthNavigatorValidation(): boolean {
+    const currentDate = new Date();
+    if (this.year < currentDate.getFullYear()) {
+      return true;
+    } else if (this.year === currentDate.getFullYear() && this.monthIndex <= currentDate.getMonth()) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -73,9 +102,13 @@ export class DashboardComponent implements OnInit {
    * return true to disable
    * return false to enable
    */
-  yearNavigatorValidation() {
-
-    return null;
+  yearNavigatorValidation(): boolean {
+    const currentDate = new Date();
+    if (this.year <= currentDate.getFullYear()) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -83,19 +116,29 @@ export class DashboardComponent implements OnInit {
    * After dialog close upload the file and update holiday view component using monthComponentNotify() in HolidayService
    */
   uploadDialog() {
- 
+    const dialogRef = this.dialog.open(UploadDialogComponent, {
+      width: '500px'
+    });
 
+    dialogRef.afterClosed().subscribe((file: File) => {
+      if (file) {
+        this.holidayServiceObj.uploadFile(file).subscribe(() => {
+          this.holidayServiceObj.monthComponentNotify();
+        });
+      }
+    });
   }
 
   // Get cities list and assign the response value to cities
   getCities() {
-
+    this.holidayServiceObj.getCities().subscribe((cities) => {
+      this.cities = cities;
+    });
   }
 
   // signOut
   signOut() {
-
+    this.holidayServiceObj.signOut();
+    //this.route.navigate(['/login']);
   }
-
-
 }
