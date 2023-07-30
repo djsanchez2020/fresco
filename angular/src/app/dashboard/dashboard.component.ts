@@ -159,6 +159,14 @@ export class DashboardComponent implements OnInit {
     }*/
   }
 
+  yearNavigatorValidationDisabled(){
+    if(this.year >= 2019){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   /**
    * Open Upload Dialog component and width as 500px
    * After dialog close upload the file and update holiday view component using monthComponentNotify() in HolidayService
