@@ -89,22 +89,27 @@ export class DashboardComponent implements OnInit {
   monthNavigatorValidation(): boolean {
 
     // Get the current date
-    const currentDate = new Date();
+  const currentDate = new Date();
 
-    // Get the current month and year from the current date
-    const currentMonth = currentDate.getMonth() + 1; // January is 0, so we add 1 to get 1-12 range
-    const currentYear = currentDate.getFullYear();
+  // Get the current month and year from the current date
+  const currentMonth = currentDate.getMonth() + 1; // January is 0, so we add 1 to get 1-12 range
+  const currentYear = currentDate.getFullYear();
 
-    // Define the valid range of months (1-12) and years (e.g., 2019, 2020, etc.)
-    const validMonths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    const validYears = [2019, 2020, 2021]; // Add more years if needed
+  // Define the valid range of months (1-12) and years (e.g., 2019, 2020, etc.)
+  const validMonths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const validYears = [2019, 2020, 2021]; // Add more years if needed
 
-    // Check if the provided monthIndex and year fall within the valid range
-    const isValidMonth = validMonths.includes(this.monthIndex);
-    const isValidYear = validYears.includes(this.year);
+  // Check if the provided monthIndex and year fall within the valid range
+  const isValidMonth = validMonths.includes(this.monthIndex);
+  const isValidYear = validYears.includes(this.year);
 
-    // Return true if both monthIndex and year are valid
-    return isValidMonth && isValidYear;
+  // Check if the year is valid based on the month
+  const isYearValidForMonth =
+    (currentYear === this.year && this.monthIndex >= currentMonth) ||
+    (currentYear < this.year);
+
+  // Return true if both monthIndex and year are valid and the year is valid for the month
+  return isValidMonth && isValidYear && isYearValidForMonth;
 
   }
 
