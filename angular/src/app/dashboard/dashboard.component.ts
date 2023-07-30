@@ -39,11 +39,9 @@ export class DashboardComponent implements OnInit {
    * get cities
    */
   ngOnInit() {
-    const setDate = new Date("2020/12/23");
+    const setDate = new Date();
     this.monthIndex = setDate.getMonth();
     this.year = setDate.getFullYear();
-
-    console.log("this.monthIndex", this.monthIndex);
     this.getCities();
   }
 
@@ -111,7 +109,14 @@ export class DashboardComponent implements OnInit {
    * return false to enable
    */
   yearNavigatorValidation(): boolean {
-    const testDate1 = new Date('2019/11/23');
+    
+    if(this.year > 2019){
+      return true;
+    }else{
+      return false;
+    }
+
+    /*const testDate1 = new Date('2019/11/23');
     const testDate2 = new Date('2019/10/23');
     const testDate3 = new Date('2019/12/23');
     const testDate4 = new Date('2020/11/23');
@@ -119,14 +124,14 @@ export class DashboardComponent implements OnInit {
     const currentDate = new Date();
     /**
      * Disabled button
-     */
+     * /
     if(currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019){
       return true;
     }
 
     /**
      * enabled button
-     */
+     * /
     if(currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019){
       return false;
     }else if(currentDate == testDate4 && this.monthIndex == 8 && this.year == 2018){
@@ -148,7 +153,7 @@ export class DashboardComponent implements OnInit {
     }else{
      console.error("fallo", currentDate); 
      return true;
-    }/*else if (this.year <= currentDate.getFullYear()) {
+    }else if (this.year <= currentDate.getFullYear()) {
       return true;
     } else {
       return false;
