@@ -87,6 +87,9 @@ export class DashboardComponent implements OnInit {
    * Return false to enable
    */
   monthNavigatorValidation(): boolean {
+
+    return false;
+    
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
