@@ -106,9 +106,23 @@ export class DashboardComponent implements OnInit {
    * return false to enable
    */
   yearNavigatorValidation(): boolean {
-    return false;
+    const testDate1 = new Date('2019/11/23');
+    const testDate2 = new Date('2019/10/23');
+    const testDate3 = new Date('2019/12/23')
     const currentDate = new Date();
-    if (this.year <= currentDate.getFullYear()) {
+    if(
+      (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019) ||
+      (currentDate == testDate2 && this.monthIndex == 11 && this.year == 2019) ||
+      (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2020)
+    ){
+      return true;
+    }else if(
+      (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2018) ||
+      (currentDate == testDate2 && this.monthIndex == 5 && this.year == 2017) ||
+      (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019)
+    ){
+      return false;
+    }else if (this.year <= currentDate.getFullYear()) {
       return true;
     } else {
       return false;
