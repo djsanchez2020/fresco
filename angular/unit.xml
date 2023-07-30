@@ -1,38 +1,38 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:59:50" id="0" hostname="d8ea28e3f92e" tests="30" errors="0" failures="0" time="2.015">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T19:00:54" id="0" hostname="d8ea28e3f92e" tests="30" errors="0" failures="0" time="1.983">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.15" classname=".TestHost holidayView"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.076" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.066" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.224" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.069" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.063" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.049" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.045" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.046" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.133" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.147" classname=".TestHost holidayView"/>
+  <testcase name="HolidayViewComponent HTML file Display date" time="0.141" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.073" classname=".HolidayViewComponent HTML file"/>
   <testcase name="HolidayViewComponent HTML file Display Holiday names in calendar" time="0.1" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.051" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Display date" time="0.067" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.052" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.098" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.161" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.039" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.031" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.042" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.045" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.049" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.035" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.038" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.038" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.032" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.053" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.027" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.047" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.056" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.033" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.173" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.057" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.162" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.146" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.036" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.044" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.047" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.047" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.052" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.053" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.051" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.088" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.052" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.037" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.038" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.045" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.056" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.034" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.046" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.031" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.031" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.043" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.032" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.048" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.044" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.029" classname=".HolidayViewComponent TS file"/>
   <system-out>
     <![CDATA[
 ]]>
