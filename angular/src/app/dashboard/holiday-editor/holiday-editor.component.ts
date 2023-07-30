@@ -46,6 +46,12 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
     this.holidayEditor = new FormGroup({
       holidayName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z ]*$')])
     });
+
+    this.holidayServiceObj.userDate$.subscribe((date)=>{
+      this.selectedDate = date;
+      this.getSelectedHolidayInfo();
+    });
+
   }
 
   /**

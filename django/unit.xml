@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite errors="0" failures="0" file="holiday/tests.py" name="holiday.tests.PageHitTests-20230730162130" skipped="0" tests="17" time="0.112" timestamp="2023-07-30T16:21:30">
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="91" name="test_admin_login_view" time="0.011" timestamp="2023-07-30T16:21:30">
+	<testsuite errors="0" failures="0" file="holiday/tests.py" name="holiday.tests.PageHitTests-20230730162950" skipped="0" tests="17" time="0.110" timestamp="2023-07-30T16:29:50">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="91" name="test_admin_login_view" time="0.012" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="54" name="test_admin_text_content" time="0.004" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="54" name="test_admin_text_content" time="0.004" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="147" name="test_all_city_names" time="0.008" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="147" name="test_all_city_names" time="0.006" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="31" name="test_create_page" time="0.010" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="31" name="test_create_page" time="0.010" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="153" name="test_del_holiday_name" time="0.005" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="153" name="test_del_holiday_name" time="0.005" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="41" name="test_holiday_text_content" time="0.003" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="41" name="test_holiday_text_content" time="0.003" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="25" name="test_holidays_page" time="0.008" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="25" name="test_holidays_page" time="0.008" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="158" name="test_update" time="0.014" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="158" name="test_update" time="0.013" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="131" name="test_upload_invalid" time="0.007" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="131" name="test_upload_invalid" time="0.007" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="139" name="test_upload_invalid_with_cities" time="0.006" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="139" name="test_upload_invalid_with_cities" time="0.006" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="123" name="test_valid" time="0.007" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="123" name="test_valid" time="0.006" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="108" name="test_view_create" time="0.006" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="108" name="test_view_create" time="0.006" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="116" name="test_view_create_with_past_date" time="0.005" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="116" name="test_view_create_with_past_date" time="0.005" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="98" name="test_view_daily" time="0.004" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="98" name="test_view_daily" time="0.005" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="65" name="test_view_list_all_holidays" time="0.005" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="65" name="test_view_list_all_holidays" time="0.005" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="73" name="test_view_monthly" time="0.004" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="73" name="test_view_monthly" time="0.005" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
 <![CDATA[]]>			</system-err>
 		</testcase>
-		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="84" name="test_view_monthly_with_no_result" time="0.005" timestamp="2023-07-30T16:21:30">
+		<testcase classname="holiday.tests.PageHitTests" file="holiday/tests.py" line="84" name="test_view_monthly_with_no_result" time="0.006" timestamp="2023-07-30T16:29:50">
 			<system-out>
 <![CDATA[]]>			</system-out>
 			<system-err>
