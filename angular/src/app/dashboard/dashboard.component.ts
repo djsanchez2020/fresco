@@ -90,13 +90,6 @@ export class DashboardComponent implements OnInit {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
-    /*if(
-      (currentDate ===  new Date("2019/11/23") && this.monthIndex == 11 && this.year == 2019)
-    ){
-      return true;
-    }else if(currentDate === new Date("2019/12/23")){
-      return false;
-    }*/
   
     if (this.year < currentYear) {
       return true;
@@ -115,6 +108,7 @@ export class DashboardComponent implements OnInit {
    * return false to enable
    */
   yearNavigatorValidation(): boolean {
+    return false;
     const currentDate = new Date();
     if (this.year <= currentDate.getFullYear()) {
       return true;
