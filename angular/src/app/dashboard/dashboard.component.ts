@@ -99,6 +99,8 @@ export class DashboardComponent implements OnInit {
       return false; // Return false in all other cases
     }
   }
+  
+
 
   /**
    * To disable navigation for year
