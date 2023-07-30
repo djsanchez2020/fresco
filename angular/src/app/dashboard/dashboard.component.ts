@@ -93,7 +93,7 @@ export class DashboardComponent implements OnInit {
   
     if (this.year < currentYear) {
       return true;
-    } else if (this.year === currentYear && this.monthIndex <= currentMonth) {
+    } else if (this.year === currentYear && this.monthIndex < currentMonth) {
       return true;
     } else {
       return false; // Return false in all other cases
