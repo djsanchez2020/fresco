@@ -89,7 +89,7 @@ export class DashboardComponent implements OnInit {
   monthNavigatorValidation(): boolean {
 
     return false;
-    
+
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
@@ -113,6 +113,13 @@ export class DashboardComponent implements OnInit {
     const testDate2 = new Date('2019/10/23');
     const testDate3 = new Date('2019/12/23')
     const currentDate = new Date();
+    /**
+     * Disabled button
+     */
+    if(currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019){
+      return true;
+    }
+
     if(
       (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2018) ||
       (currentDate == testDate2 && this.monthIndex == 5 && this.year == 2017) ||
