@@ -109,54 +109,11 @@ export class DashboardComponent implements OnInit {
    * return false to enable
    */
   yearNavigatorValidation(): boolean {
-    if(this.year >= 2020){
+    if(this.year >= 2019){
       return true;
     }else{
       return false;
     }
-
-    /*const testDate1 = new Date('2019/11/23');
-    const testDate2 = new Date('2019/10/23');
-    const testDate3 = new Date('2019/12/23');
-    const testDate4 = new Date('2020/11/23');
-    
-    const currentDate = new Date();
-    /**
-     * Disabled button
-     * /
-    if(currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019){
-      return true;
-    }
-
-    /**
-     * enabled button
-     * /
-    if(currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019){
-      return false;
-    }else if(currentDate == testDate4 && this.monthIndex == 8 && this.year == 2018){
-      return false;
-    }
-
-    if(
-      (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2018) ||
-      (currentDate == testDate2 && this.monthIndex == 5 && this.year == 2017) ||
-      (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019)
-    ){
-      return false;
-    }else if(
-      (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019) ||
-      (currentDate == testDate2 && this.monthIndex == 11 && this.year == 2019) ||
-      (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2020)
-    ){
-      return true;
-    }else{
-     console.error("fallo", currentDate); 
-     return true;
-    }else if (this.year <= currentDate.getFullYear()) {
-      return true;
-    } else {
-      return false;
-    }*/
   }
 
   yearNavigatorValidationDisabled(){
