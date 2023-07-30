@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:49:11" id="0" hostname="d8ea28e3f92e" tests="32" errors="0" failures="4" time="5.98">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:51:45" id="0" hostname="d8ea28e3f92e" tests="32" errors="0" failures="4" time="5.44">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="TestHost when city change=> editor should call getSelectedHolidayInfo" time="0.257" classname=".TestHost">
+  <testcase name="TestHost when city change=> editor should call getSelectedHolidayInfo" time="0.247" classname=".TestHost">
     <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
 2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
         &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
@@ -60,7 +60,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent HTML file Click=>Remove button should call removeHoliday()" time="0.369" classname=".HolidayEditorComponent HTML file">
+  <testcase name="HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed" time="0.334" classname=".HolidayEditorComponent HTML file">
     <failure type="">TypeError: this.holidayServiceObj.userDate$.subscribe is not a function
 error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: Object({ factory: Function, nodeFlags: 34193409, rootNodeFlags: 33554433, nodeMatchedQueries: 0, flags: 0, nodes: [ Object({ nodeIndex: 0, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, checkIndex: 0, flags: 33554433, childFlags: 638976, directChildFlags: 638976, childMatchedQueries: 0, matchedQueries: Object({  }), matchedQueryIds: 0, references: Object({  }), ngContentIndex: null, childCount: 1, bindings: [  ], bindingFlags: 0, outputs: [  ], element: Object({ ns: '', name: 'app-holiday-editor', attrs: [  ], template: null, componentProvider: Object({ nodeIndex: 1, parent: &lt;circular reference: Object&gt;, renderParent: &lt;circular reference: Object&gt;, bindingIndex: 0, outputIndex: 0, checkIndex: 1, flags: 638976, childFlags: 0, directChildFlags: 0, childMatchedQueries: 0, matchedQueries: Object, matchedQueryIds: 0, references: Object, ngContentIndex: -1, childCount: 0, bindings: Array, bindingFlags: 0, outputs ...
     at &lt;Jasmine&gt;
@@ -76,24 +76,31 @@ error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: O
     at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46823:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent HTML file Save button to be enabled" time="0.275" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file remove button to be enabled" time="0.241" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Add button should call addHoliday()" time="0.231" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Save button should call updateHoliday()" time="0.236" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file New entry-> Add button should be displayed, save and remove button should not be displayed" time="0.279" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Test1 display error message for holidayName text field" time="0.262" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed" time="0.234" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Test2 display error message for holidayName text field" time="0.233" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Add button to be disabled" time="0.223" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Save button to be disabled" time="0.19" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Add button to be enabled" time="0.209" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty" time="0.169" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true" time="0.133" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be false" time="0.151" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService" time="0.169" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should not call getSelectedHolidayInfo() in HolidayService  when selected date is lesser than current date" time="0.172" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.133" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.135" classname=".HolidayEditorComponent TS file">
+  <testcase name="HolidayEditorComponent HTML file Add button to be disabled" time="0.262" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Add button to be enabled" time="0.195" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Test1 display error message for holidayName text field" time="0.222" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Add button should call addHoliday()" time="0.248" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Remove button should call removeHoliday()" time="0.248" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file New entry-> Add button should be displayed, save and remove button should not be displayed" time="0.209" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Save button to be disabled" time="0.219" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Test2 display error message for holidayName text field" time="0.191" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file remove button to be enabled" time="0.197" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Save button to be enabled" time="0.173" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Save button should call updateHoliday()" time="0.183" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be false" time="0.167" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true" time="0.117" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty" time="0.151" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday" time="0.154" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo " time="0.14" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.122" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response " time="0.117" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.149" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday" time="0.155" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign response data to holidayObj" time="0.1" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo " time="0.127" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should not call getSelectedHolidayInfo() in HolidayService  when selected date is lesser than current date" time="0.1" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response " time="0.132" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.16" classname=".HolidayEditorComponent TS file">
     <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
     at &lt;Jasmine&gt;
     at SafeSubscriber._next (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
@@ -107,7 +114,10 @@ error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: O
     at SafeSubscriber.next (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.139" classname=".HolidayEditorComponent TS file">
+  <testcase name="HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday" time="0.153" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj" time="0.128" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday" time="0.112" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.11" classname=".HolidayEditorComponent TS file">
     <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
     at &lt;Jasmine&gt;
     at SafeSubscriber._next (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:283:21)
@@ -121,17 +131,7 @@ error properties: Object({ ngDebugContext: DebugContext_({ view: Object({ def: O
     at SafeSubscriber.next (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday" time="0.15" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday" time="0.173" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday" time="0.128" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response " time="0.129" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj" time="0.12" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday" time="0.164" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo " time="0.134" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign response data to holidayObj" time="0.135" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.117" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response " time="0.146" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo " time="0.144" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService" time="0.118" classname=".HolidayEditorComponent TS file"/>
   <system-out>
     <![CDATA[
 ]]>

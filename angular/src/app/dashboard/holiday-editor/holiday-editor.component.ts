@@ -55,7 +55,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
           this.getSelectedHolidayInfo();
         });
       }, 500);
-    }else if(this.holidayServiceObj.userDate$){
+    }else if(this.holidayServiceObj.userDate$?.subscribe){
       this.holidayServiceObj.userDate$.subscribe((date)=>{
         this.selectedDate = date;
         this.getSelectedHolidayInfo();
