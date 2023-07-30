@@ -138,6 +138,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
   removeHoliday() {
     this.holidayServiceObj.removeHoliday(this.holidayObj.id).subscribe(
       (response) => {
+        this.holidayObj = {};
         this.holidayEditor.reset();
         this.getSelectedHolidayInfo();
         this.holidayServiceObj.monthComponentNotify();
