@@ -47,6 +47,7 @@ export class HolidayViewComponent implements OnInit, OnChanges {
    * and send the selected date to holiday editor using sendUserSelectedDateId function in HolidayService
    */
   ngOnInit() {
+    this.selectedDate = this.getFormattedDate(new Date());
     this.holidayServiceObj.sendUserSelectedDateId(this.selectedDate);
     this.holidayServiceObj.monthViewUpdateNotifier$.subscribe(() => {
       this.monthGenerator();
