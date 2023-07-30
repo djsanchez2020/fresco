@@ -1,28 +1,9 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T15:44:50" id="0" hostname="d8ea28e3f92e" tests="134" errors="0" failures="54" time="16.03">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T15:49:59" id="0" hostname="d8ea28e3f92e" tests="134" errors="0" failures="54" time="21.546">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="UploadDialogComponent HTML file #fileStatusSelected should exists" time="0.328" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent HTML file #actionBtnsToUpload should exists" time="0.213" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent HTML file #fileDrop should exists if file not selected" time="0.211" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent HTML file #fileDrop should not exists if file selected" time="0.264" classname=".UploadDialogComponent HTML file">
-    <failure type="">Error: Expected &lt;div _ngcontent-a-c9 class="dragDrop" id="fileDrop"&gt;...&lt;/div&gt; to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/upload-dialog/upload-dialog.component.spec.ts:126:25)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="UploadDialogComponent HTML file #fileStatusSelected should not exists" time="0.17" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent HTML file Yes button should call closeDialog" time="0.199" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent HTML file No button should call closeDialog" time="0.225" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent HTML file #actionBtnsToUpload should not exists" time="0.173" classname=".UploadDialogComponent HTML file"/>
-  <testcase name="UploadDialogComponent TS file closeDialog should close dialog with file as parameter when userResponse is true" time="0.151" classname=".UploadDialogComponent TS file"/>
-  <testcase name="UploadDialogComponent TS file closeDialog should close dialog without any parameter when userResponse is false" time="0.176" classname=".UploadDialogComponent TS file"/>
-  <testcase name="UploadDialogComponent TS file openFileExplorer should open file explorer by clicking #fileUpload DOM element" time="0.163" classname=".UploadDialogComponent TS file"/>
-  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.058" classname=".TestHost holidayView"/>
-  <testcase name="HolidayService Test3 authValidator to return false" time="0.012" classname=".HolidayService">
+  <testcase name="HolidayService signOut should navigate to SignIn page" time="0.144" classname=".HolidayService">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -35,213 +16,21 @@
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
     at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
 </failure>
-    <failure type="">TypeError: Cannot read property 'signIn' of undefined
+    <failure type="">TypeError: Cannot read property 'navigateByUrl' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:55:13)
+    at http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:34:17
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:33:60)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService Test4 authValidator to return false after calling signOut" time="0.009" classname=".HolidayService">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'signIn' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:65:13)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayService Test2 authValidator to return true" time="0.013" classname=".HolidayService">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'signIn' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:45:13)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayService http Test upload file should use Get method and should return Observable" time="0.011" classname=".HolidayService http">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'uploadFile' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:165:15)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-    <failure type="">TypeError: Cannot read property 'verify' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayService http Test removeHoliday should use Get method and should return Observable" time="0.008" classname=".HolidayService http">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'removeHoliday' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:154:15)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-    <failure type="">TypeError: Cannot read property 'verify' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayService http Test getHolidays should use post method and should return Observable" time="0.009" classname=".HolidayService http">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'getSelectedHolidayInfo' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:113:15)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-    <failure type="">TypeError: Cannot read property 'verify' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayService http Test getCities should use Get method and should return Observable" time="0.017" classname=".HolidayService http">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'getCities' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:94:15)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-    <failure type="">TypeError: Cannot read property 'verify' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayService http Test getHolidays should use post method and should return Observable" time="0.012" classname=".HolidayService http">
+  <testcase name="HolidayService http Test getHolidays should use post method and should return Observable" time="0.018" classname=".HolidayService http">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -277,7 +66,43 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService http Test signIn should use post method and should return Observable" time="0.009" classname=".HolidayService http">
+  <testcase name="HolidayService http Test getHolidays should use post method and should return Observable" time="0.011" classname=".HolidayService http">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'getSelectedHolidayInfo' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:113:15)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+    <failure type="">TypeError: Cannot read property 'verify' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService http Test signIn should use post method and should return Observable" time="0.016" classname=".HolidayService http">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -313,7 +138,43 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService http Test addHoliday should use post method and should return Observable" time="0.012" classname=".HolidayService http">
+  <testcase name="HolidayService http Test getCities should use Get method and should return Observable" time="0.018" classname=".HolidayService http">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'getCities' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:94:15)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+    <failure type="">TypeError: Cannot read property 'verify' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService http Test addHoliday should use post method and should return Observable" time="0.014" classname=".HolidayService http">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -349,7 +210,7 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService http Test updateHoliday should use post method and should return Observable" time="0.014" classname=".HolidayService http">
+  <testcase name="HolidayService http Test updateHoliday should use post method and should return Observable" time="0.011" classname=".HolidayService http">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -385,7 +246,7 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService component Interation Test1 monthComponentNotify and monthViewUpdateNotifier$ should work" time="0.012" classname=".HolidayService component Interation">
+  <testcase name="HolidayService http Test removeHoliday should use Get method and should return Observable" time="0.011" classname=".HolidayService http">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -398,9 +259,20 @@
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
     at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
 </failure>
-    <failure type="">TypeError: Cannot read property 'monthViewUpdateNotifier$' of undefined
+    <failure type="">TypeError: Cannot read property 'removeHoliday' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:195:27)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:154:15)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+    <failure type="">TypeError: Cannot read property 'verify' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
@@ -410,7 +282,68 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService component Interation Test1 sendUserSelectedDateId and userDate$ should work" time="0.009" classname=".HolidayService component Interation">
+  <testcase name="HolidayService http Test upload file should use Get method and should return Observable" time="0.014" classname=".HolidayService http">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'uploadFile' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:165:15)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+    <failure type="">TypeError: Cannot read property 'verify' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:77:29)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService Test2 authValidator to return true" time="0.014" classname=".HolidayService">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'signIn' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:45:13)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService component Interation Test1 sendUserSelectedDateId and userDate$ should work" time="0.014" classname=".HolidayService component Interation">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -435,7 +368,82 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService Test1 authValidator to return false" time="0.008" classname=".HolidayService">
+  <testcase name="HolidayService component Interation Test1 monthComponentNotify and monthViewUpdateNotifier$ should work" time="0.018" classname=".HolidayService component Interation">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'monthViewUpdateNotifier$' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:195:27)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService Test3 authValidator to return false" time="0.012" classname=".HolidayService">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'signIn' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:55:13)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService Test4 authValidator to return false after calling signOut" time="0.011" classname=".HolidayService">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'signIn' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:65:13)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayService Test1 authValidator to return false" time="0.01" classname=".HolidayService">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -460,34 +468,324 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="HolidayService signOut should navigate to SignIn page" time="0.008" classname=".HolidayService">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+  <testcase name="DashboardComponent Test HTML Year navigation, right button should call navigationArrowYear function" time="0.471" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected spy navigationArrowYear to have been called with:
+  [ 1 ]
+but it was never called.
     at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:406:19)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Test1 selected city should be assigned to selectedCity" time="0.714" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Month navigation, right button should call navigationArrowMonth function" time="0.735" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Year navigation, left button should call navigationArrowYear function" time="0.372" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Upload button should call openUploadDialog" time="0.432" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Sign Out button should call signOut function" time="0.494" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Test2 selected city should be assigned to selectedCity" time="0.613" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected 'fAbdc' to be 'gABc'.
     at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
+</failure>
+    <failure type="">Error: Expected 'fAbdc' to be 'vAccvvv'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
+</failure>
+    <failure type="">Error: Expected 'fAbdc' to be 'dfdf'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
+</failure>
+    <failure type="">Error: Expected 'fAbdc' to be 'gggggggggg'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
+</failure>
+    <failure type="">Error: Expected 'fAbdc' to be 'dddddd'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Month navigation, left button should call navigationArrowMonth function" time="0.443" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Test2 Mat-select to display cities" time="0.472" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML onclick Upload button open Upload-Dialog" time="0.23" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Test1 Mat-select to display cities" time="0.286" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML when navigate month, year value should change on button click" time="0.243" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected '2018' to be '2019'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:577:44
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
+</failure>
+    <failure type="">Error: Expected 'December' to be 'January'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:578:45
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
+</failure>
+    <failure type="">Error: Expected '2018' to be '2020'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:577:44
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
+</failure>
+    <failure type="">Error: Expected 'December' to be 'January'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:578:45
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
+</failure>
+    <failure type="">Error: Expected '2018' to be '2020'.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:577:44
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML year Value should change on button click" time="0.198" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected '2019' to be '2020'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:534:42)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected '2019' to be '2020'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:538:42)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Month Value should change on button click" time="0.188" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test HTML Month navigation, right button to be enabled" time="0.244" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:478:28)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Month navigation, right button to be disabled" time="0.237" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:453:28)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:460:28)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Year navigation, right button to be enabled" time="0.175" classname=".DashboardComponent Test HTML">
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:434:28)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:441:28)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test HTML Year navigation, right button to be disabled" time="0.172" classname=".DashboardComponent Test HTML"/>
+  <testcase name="DashboardComponent Test TS file ngOnInit to load cities" time="0.219" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file ngOnInit to Initialize monthIndex and year" time="0.247" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file After uploading file notify holiday view component using monthComponentNotify" time="0.202" classname=".DashboardComponent Test TS file">
+    <failure type="">Failed: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+error properties: Object({ ngComponent: Function })
+Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
+    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
+    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
+    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
+    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
+    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:130:35)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:361:17)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return true" time="0.315" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:239:52)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:245:52)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:251:52)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file uploadDialog should call uploadFile function in Holiday service when afterClosed response contain File Object" time="0.248" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+error properties: Object({ ngComponent: Function })
+    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
+    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
+    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
+    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
+    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
+    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:130:35)
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:337:17
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file navigationArrowYear arrow" time="0.172" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file uploadDialog should not call uploadFile function in Holiday service when afterClosed response does not contain File Object" time="0.266" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+error properties: Object({ ngComponent: Function })
+    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
+    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
+    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
+    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
+    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
+    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:130:35)
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:348:19
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return false" time="0.336" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:276:52)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file Test2 -> navigationArrowMonth arrow " time="0.309" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.29" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:308:51)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:314:51)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:320:51)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file signOut should use signOut service" time="0.184" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file uploadDialog should open upload dialog" time="0.276" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
+error properties: Object({ ngComponent: Function })
+    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
+    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
+    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
+    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
+    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
+    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:130:35)
+    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:325:17
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file getCities to get the city list and assign the response to cities" time="0.309" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.308" classname=".DashboardComponent Test TS file">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:297:51)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent Test TS file Test3 -> navigationArrowMonth arrow " time="0.232" classname=".DashboardComponent Test TS file"/>
+  <testcase name="DashboardComponent Test TS file Test1 -> navigationArrowMonth arrow " time="0.255" classname=".DashboardComponent Test TS file"/>
+  <testcase name="TestHost when city change=> editor should call getSelectedHolidayInfo" time="0.055" classname=".TestHost">
+    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
+          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
+1. If 'mat-error' is an Angular component, then verify that it is part of this module.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
+          &lt;!-- Display error message here --&gt;
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
+          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
+          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
+    at &lt;Jasmine&gt;
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
     at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
 </failure>
-    <failure type="">TypeError: Cannot read property 'navigateByUrl' of undefined
+    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
+          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
+1. If 'mat-error' is an Angular component, then verify that it is part of this module.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
+          &lt;!-- Display error message here --&gt;
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
+          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
+          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
     at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:34:17
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
     at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/services/holiday.service.spec.ts:33:60)
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'vw' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:560:34)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent TS file validate() should call holidayServiceObj.signIn" time="0.327" classname=".AuthenticationComponent TS file">
+  <testcase name="AuthenticationComponent TS file validate() should call holidayServiceObj.signIn" time="0.283" classname=".AuthenticationComponent TS file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -546,7 +844,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent TS file shoud navigate" time="0.371" classname=".AuthenticationComponent TS file">
+  <testcase name="AuthenticationComponent TS file shoud navigate" time="0.316" classname=".AuthenticationComponent TS file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -607,7 +905,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent TS file validate() should call holidayServiceObj.signIn" time="0.316" classname=".AuthenticationComponent TS file">
+  <testcase name="AuthenticationComponent TS file validate() should call holidayServiceObj.signIn" time="0.322" classname=".AuthenticationComponent TS file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -666,7 +964,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Sign in button should call validate()" time="0.314" classname=".AuthenticationComponent HTML file">
+  <testcase name="AuthenticationComponent HTML file Sign in button to be enabled" time="0.261" classname=".AuthenticationComponent HTML file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -715,7 +1013,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
 </failure>
     <failure type="">TypeError: Cannot read property 'debugElement' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:191:38)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:173:38)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
@@ -725,7 +1023,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Sign in button to be disabled" time="0.282" classname=".AuthenticationComponent HTML file">
+  <testcase name="AuthenticationComponent HTML file Sign in button to be disabled" time="0.654" classname=".AuthenticationComponent HTML file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -784,7 +1082,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Test1 display error message for username text field" time="0.247" classname=".AuthenticationComponent HTML file">
+  <testcase name="AuthenticationComponent HTML file Test1 display error message for username text field" time="0.255" classname=".AuthenticationComponent HTML file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -845,7 +1143,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Test2 display error message for username text field" time="0.246" classname=".AuthenticationComponent HTML file">
+  <testcase name="AuthenticationComponent HTML file Sign in button should call validate()" time="0.455" classname=".AuthenticationComponent HTML file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -892,21 +1190,19 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">TypeError: Cannot read property 'getAllHarnesses' of undefined
+    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
     at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:230:36
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:228:75)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:191:38)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Test1 display error message for password text field" time="0.232" classname=".AuthenticationComponent HTML file">
+  <testcase name="AuthenticationComponent HTML file Test1 display error message for password text field" time="0.298" classname=".AuthenticationComponent HTML file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -967,7 +1263,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
 </failure>
   </testcase>
-  <testcase name="AuthenticationComponent HTML file Sign in button to be enabled" time="0.232" classname=".AuthenticationComponent HTML file">
+  <testcase name="AuthenticationComponent HTML file Test2 display error message for username text field" time="0.342" classname=".AuthenticationComponent HTML file">
     <failure type="">1. If 'app-holiday-view' is an Angular component and it has 'monthIndex' input, then verify that it is part of this module.
 2. If 'app-holiday-view' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
@@ -1014,16 +1310,18 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
     at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
+    <failure type="">TypeError: Cannot read property 'getAllHarnesses' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:173:38)
+    at http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:230:36
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/authentication/authentication.component.spec.ts:228:75)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
     at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
 </failure>
   </testcase>
   <testcase name="AuthenticationComponent HTML file should show snack bar" time="0.231" classname=".AuthenticationComponent HTML file">
@@ -1087,69 +1385,9 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to '
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
 </failure>
   </testcase>
-  <testcase name="TestHost when city change=> editor should call getSelectedHolidayInfo" time="0.038" classname=".TestHost">
-    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
-        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
-          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
-1. If 'mat-error' is an Angular component, then verify that it is part of this module.
-2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
-          &lt;!-- Display error message here --&gt;
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
-          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
-          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
-        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
-          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
-1. If 'mat-error' is an Angular component, then verify that it is part of this module.
-2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
-          &lt;!-- Display error message here --&gt;
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
-          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
-          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'vw' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:560:34)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
-    at &lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.034" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.178" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.055" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.105" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.039" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.056" classname=".HolidayViewComponent HTML file">
+  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.051" classname=".TestHost holidayView"/>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.047" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.048" classname=".HolidayViewComponent HTML file">
     <failure type="">Error: Expected spy sendSelectedDate not to have been called.
     at &lt;Jasmine&gt;
     at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
@@ -1229,11 +1467,18 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.027" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.048" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.039" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.122" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.044" classname=".HolidayViewComponent HTML file">
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.156" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.034" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.038" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.049" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.138" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.146" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Display Holiday names in calendar" time="0.068" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.078" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.048" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Display date" time="0.065" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.03" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.05" classname=".HolidayViewComponent HTML file">
     <failure type="">Error: Expected spy sendSelectedDate not to have been called.
     at &lt;Jasmine&gt;
     at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
@@ -1301,36 +1546,22 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.121" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Display Holiday names in calendar" time="0.086" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Display date" time="0.078" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.028" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.04" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.042" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.024" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.021" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.022" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.026" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.036" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.021" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.03" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.037" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.033" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.028" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.046" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.02" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayEditorComponent HTML file remove button to be enabled" time="0.143" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Remove button should call removeHoliday()" time="0.131" classname=".HolidayEditorComponent HTML file">
-    <failure type="">Error: Expected spy removeHoliday to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:470:22)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="HolidayEditorComponent HTML file Test1 display error message for holidayName text field" time="0.164" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Test2 display error message for holidayName text field" time="0.146" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file New entry-> Add button should be displayed, save and remove button should not be displayed" time="0.135" classname=".HolidayEditorComponent HTML file">
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.04" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.025" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.029" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.03" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.031" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.021" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.029" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.034" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.02" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.022" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.031" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.02" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.028" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.027" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.051" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayEditorComponent HTML file New entry-> Add button should be displayed, save and remove button should not be displayed" time="0.239" classname=".HolidayEditorComponent HTML file">
     <failure type="">Error: Expected 2 to be 1.
     at &lt;Jasmine&gt;
     at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:318:27)
@@ -1338,7 +1569,31 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed" time="0.173" classname=".HolidayEditorComponent HTML file">
+  <testcase name="HolidayEditorComponent HTML file Test1 display error message for holidayName text field" time="0.157" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Save button should call updateHoliday()" time="0.157" classname=".HolidayEditorComponent HTML file">
+    <failure type="">Error: Expected spy updateHoliday to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:444:22)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="HolidayEditorComponent HTML file Test2 display error message for holidayName text field" time="0.129" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file remove button to be enabled" time="0.148" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Remove button should call removeHoliday()" time="0.117" classname=".HolidayEditorComponent HTML file">
+    <failure type="">Error: Expected spy removeHoliday to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:470:22)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="HolidayEditorComponent HTML file Save button to be enabled" time="0.117" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Save button to be disabled" time="0.123" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Click=>Add button should call addHoliday()" time="0.151" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Add button to be enabled" time="0.133" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Add button to be disabled" time="0.114" classname=".HolidayEditorComponent HTML file"/>
+  <testcase name="HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed" time="0.145" classname=".HolidayEditorComponent HTML file">
     <failure type="">Error: Expected 3 to be 2.
     at &lt;Jasmine&gt;
     at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:332:27)
@@ -1358,22 +1613,22 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent HTML file Add button to be disabled" time="0.11" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Add button should call addHoliday()" time="0.124" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Add button to be enabled" time="0.109" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Save button to be disabled" time="0.131" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Save button to be enabled" time="0.149" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Save button should call updateHoliday()" time="0.12" classname=".HolidayEditorComponent HTML file">
-    <failure type="">Error: Expected spy updateHoliday to have been called.
+  <testcase name="HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo " time="0.1" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response " time="0.1" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.093" classname=".HolidayEditorComponent TS file">
+    <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:444:22)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+</failure>
+    <failure type="">Error: Expected '20/02/2019' to be '05/06/2020'.
+    at &lt;Jasmine&gt;
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:298:42)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday" time="0.107" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo " time="0.09" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday" time="0.097" classname=".HolidayEditorComponent TS file"/>
   <testcase name="HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.094" classname=".HolidayEditorComponent TS file">
     <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
     at &lt;Jasmine&gt;
@@ -1388,24 +1643,10 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday" time="0.1" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.099" classname=".HolidayEditorComponent TS file">
-    <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
-    at &lt;Jasmine&gt;
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-</failure>
-    <failure type="">Error: Expected '20/02/2019' to be '05/06/2020'.
-    at &lt;Jasmine&gt;
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:298:42)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-</failure>
-  </testcase>
-  <testcase name="HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response " time="0.098" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService" time="0.089" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty" time="0.117" classname=".HolidayEditorComponent TS file">
+  <testcase name="HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday" time="0.09" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday" time="0.095" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService" time="0.092" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty" time="0.397" classname=".HolidayEditorComponent TS file">
     <failure type="">Error: Expected '' to be null.
     at &lt;Jasmine&gt;
     at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:151:66)
@@ -1413,9 +1654,7 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj" time="0.103" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should not call getSelectedHolidayInfo() in HolidayService  when selected date is lesser than current date" time="0.102" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true" time="0.085" classname=".HolidayEditorComponent TS file">
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true" time="0.137" classname=".HolidayEditorComponent TS file">
     <failure type="">Error: Expected false to be truthy.
     at &lt;Jasmine&gt;
     at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:162:36)
@@ -1429,301 +1668,17 @@ error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is 
     at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be false" time="0.095" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.101" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday" time="0.089" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign response data to holidayObj" time="0.103" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo " time="0.106" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response " time="0.103" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.103" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="DashboardComponent Test HTML Month navigation, right button should call navigationArrowMonth function" time="0.164" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Sign Out button should call signOut function" time="0.154" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Month navigation, right button to be disabled" time="0.139" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:453:28)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:460:28)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML year Value should change on button click" time="0.145" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected '2019' to be '2020'.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:534:42)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected '2019' to be '2020'.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:538:42)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Month navigation, left button should call navigationArrowMonth function" time="0.153" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML when navigate month, year value should change on button click" time="0.166" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected '2018' to be '2019'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:577:44
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
-</failure>
-    <failure type="">Error: Expected 'December' to be 'January'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:578:45
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
-</failure>
-    <failure type="">Error: Expected '2018' to be '2020'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:577:44
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
-</failure>
-    <failure type="">Error: Expected 'December' to be 'January'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:578:45
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
-</failure>
-    <failure type="">Error: Expected '2018' to be '2020'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:577:44
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:572:11)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Year navigation, left button should call navigationArrowYear function" time="0.138" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Month Value should change on button click" time="0.181" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Test1 selected city should be assigned to selectedCity" time="0.287" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Test2 Mat-select to display cities" time="0.213" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Test2 selected city should be assigned to selectedCity" time="0.224" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected 'fAbdc' to be 'gABc'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
-    at &lt;Jasmine&gt;
-    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
-</failure>
-    <failure type="">Error: Expected 'fAbdc' to be 'vAccvvv'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
-    at &lt;Jasmine&gt;
-    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
-</failure>
-    <failure type="">Error: Expected 'fAbdc' to be 'dfdf'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
-    at &lt;Jasmine&gt;
-    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
-</failure>
-    <failure type="">Error: Expected 'fAbdc' to be 'gggggggggg'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
-    at &lt;Jasmine&gt;
-    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
-</failure>
-    <failure type="">Error: Expected 'fAbdc' to be 'dddddd'.
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:626:40
-    at &lt;Jasmine&gt;
-    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:70:42)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Upload button should call openUploadDialog" time="0.199" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML onclick Upload button open Upload-Dialog" time="0.168" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Test1 Mat-select to display cities" time="0.191" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test HTML Year navigation, right button should call navigationArrowYear function" time="0.132" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected spy navigationArrowYear to have been called with:
-  [ 1 ]
-but it was never called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:406:19)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Year navigation, right button to be enabled" time="0.161" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:434:28)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:441:28)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Month navigation, right button to be enabled" time="0.139" classname=".DashboardComponent Test HTML">
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:478:28)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test HTML Year navigation, right button to be disabled" time="0.13" classname=".DashboardComponent Test HTML"/>
-  <testcase name="DashboardComponent Test TS file uploadDialog should call uploadFile function in Holiday service when afterClosed response contain File Object" time="0.153" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-error properties: Object({ ngComponent: Function })
-    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
-    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
-    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
-    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
-    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
-    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:124:35)
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:337:17
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file ngOnInit to load cities" time="0.155" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file After uploading file notify holiday view component using monthComponentNotify" time="0.208" classname=".DashboardComponent Test TS file">
-    <failure type="">Failed: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-error properties: Object({ ngComponent: Function })
-Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
-    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
-    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
-    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
-    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
-    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:124:35)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:361:17)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return true" time="0.151" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:239:52)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:245:52)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:251:52)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file getCities to get the city list and assign the response to cities" time="0.16" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file Test3 -> navigationArrowMonth arrow " time="0.149" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file ngOnInit to Initialize monthIndex and year" time="0.21" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file Test1 -> navigationArrowMonth arrow " time="0.154" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file navigationArrowYear arrow" time="0.144" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file signOut should use signOut service" time="0.152" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file monthNavigatorValidation should return false" time="0.145" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:276:52)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.153" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: Expected false to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:297:51)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file Test2 -> navigationArrowMonth arrow " time="0.141" classname=".DashboardComponent Test TS file"/>
-  <testcase name="DashboardComponent Test TS file uploadDialog should open upload dialog" time="0.16" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-error properties: Object({ ngComponent: Function })
-    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
-    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
-    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
-    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
-    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
-    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:124:35)
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:325:17
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file uploadDialog should not call uploadFile function in Holiday service when afterClosed response does not contain File Object" time="0.175" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
-error properties: Object({ ngComponent: Function })
-    at noComponentFactoryError (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:26962:1)
-    at CodegenComponentFactoryResolver.resolveComponentFactory (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:27038:1)
-    at CdkPortalOutlet.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/cdk/fesm2015/portal.js:810:1)
-    at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
-    at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
-    at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:124:35)
-    at http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:348:19
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-</failure>
-  </testcase>
-  <testcase name="DashboardComponent Test TS file yearNavigatorValidation should return true" time="0.163" classname=".DashboardComponent Test TS file">
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:308:51)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:314:51)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected true to be falsy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.spec.ts:320:51)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-  </testcase>
-  <testcase name="RouteValidationGuard If authValidator returns true navigate to dashboard" time="0.016" classname=".RouteValidationGuard">
-    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
-    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
-    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'navigateByUrl' of undefined
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/src/app/routeValidation/route-validation.guard.spec.ts:51:17
-    at &lt;Jasmine&gt;
-    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/routeValidation/route-validation.guard.spec.ts:49:73)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-</failure>
-  </testcase>
-  <testcase name="RouteValidationGuard If authValidator to returns false navigate to authentication" time="0.025" classname=".RouteValidationGuard">
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should not call getSelectedHolidayInfo() in HolidayService  when selected date is lesser than current date" time="0.172" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be false" time="0.085" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign response data to holidayObj" time="0.105" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday" time="0.09" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj" time="0.111" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.105" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo " time="0.101" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.108" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response " time="0.185" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday" time="0.122" classname=".HolidayEditorComponent TS file"/>
+  <testcase name="RouteValidationGuard If authValidator to returns false navigate to authentication" time="0.012" classname=".RouteValidationGuard">
     <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
     at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
     at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
@@ -1750,6 +1705,51 @@ error properties: Object({ ngComponent: Function })
     at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
 </failure>
   </testcase>
+  <testcase name="RouteValidationGuard If authValidator returns true navigate to dashboard" time="0.019" classname=".RouteValidationGuard">
+    <failure type="">Error: Component AuthenticationComponent is not part of any NgModule or the module has not been imported into your module.
+    at JitCompiler._createCompiledHostTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26551:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26527:1
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26524:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26513:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+    at JitCompiler.compileModuleAndAllComponentsSync (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26408:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'navigateByUrl' of undefined
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/routeValidation/route-validation.guard.spec.ts:51:17
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/routeValidation/route-validation.guard.spec.ts:49:73)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+</failure>
+  </testcase>
+  <testcase name="UploadDialogComponent HTML file #actionBtnsToUpload should not exists" time="0.094" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent HTML file #fileStatusSelected should not exists" time="0.106" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent HTML file No button should call closeDialog" time="0.143" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent HTML file #actionBtnsToUpload should exists" time="0.111" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent HTML file Yes button should call closeDialog" time="0.107" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent HTML file #fileDrop should not exists if file selected" time="0.105" classname=".UploadDialogComponent HTML file">
+    <failure type="">Error: Expected &lt;div _ngcontent-a-c514 class="dragDrop" id="fileDrop"&gt;...&lt;/div&gt; to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/dashboard/upload-dialog/upload-dialog.component.spec.ts:126:25)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="UploadDialogComponent HTML file #fileStatusSelected should exists" time="0.123" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent HTML file #fileDrop should exists if file not selected" time="0.1" classname=".UploadDialogComponent HTML file"/>
+  <testcase name="UploadDialogComponent TS file closeDialog should close dialog with file as parameter when userResponse is true" time="0.139" classname=".UploadDialogComponent TS file"/>
+  <testcase name="UploadDialogComponent TS file closeDialog should close dialog without any parameter when userResponse is false" time="0.109" classname=".UploadDialogComponent TS file"/>
+  <testcase name="UploadDialogComponent TS file openFileExplorer should open file explorer by clicking #fileUpload DOM element" time="0.087" classname=".UploadDialogComponent TS file"/>
   <system-out>
     <![CDATA[HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
 Error: No component factory found for UploadDialogComponent. Did you add it to @NgModule.entryComponents?
@@ -1759,7 +1759,7 @@ Error: No component factory found for UploadDialogComponent. Did you add it to @
     at MatDialogContainer.attachComponentPortal (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:354:1)
     at MatDialog._attachDialogContent (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1160:1)
     at MatDialog.open (http://localhost:9876/_karma_webpack_/node_modules/@angular/material/fesm2015/dialog.js:1028:1)
-    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:124:35)
+    at DashboardComponent.uploadDialog (http://localhost:9876/_karma_webpack_/src/app/dashboard/dashboard.component.ts:130:35)
     at Object.eval [as handleEvent] (ng:///DynamicTestModule/DashboardComponent.ngfactory.js:230:31)
     at handleEvent (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45183:77)
     at callWithDebugContext (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:46823:1)
