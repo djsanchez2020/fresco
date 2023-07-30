@@ -131,6 +131,8 @@ export class DashboardComponent implements OnInit {
     let testDate = new Date('2019/11/23');
     let testDate2 = new Date('2019/12/23');
     let testDate3 = new Date('2018/05/23');
+    let testDate4 = new Date('2020/11/23');
+    
     
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
@@ -140,7 +142,7 @@ export class DashboardComponent implements OnInit {
       return true;
     }
 
-    if(currentDate == testDate2){
+    if(currentDate == testDate2 || currentDate == testDate4){
       return false;
     }
 
