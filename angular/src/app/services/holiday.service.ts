@@ -141,7 +141,7 @@ export class HolidayService {
    */
   updateHoliday(id: any, date: string, city: string, holidayName: string): Observable<any> {
     const request = {
-      date: date,
+      date: this.transformDateFormat(date),
       city_name: city,
       holidayName: holidayName
     };
@@ -175,11 +175,11 @@ export class HolidayService {
     const [year, month, day] = inputDate.split('/');
   
     // Create a new Date object using the extracted parts
-    const dateObject = new Date(+year, +month - 1, +day);
+    const dateObject = new Date(+year, +month, +day);
   
     // Get the day, month, and year from the date object
     const formattedDay = String(dateObject.getDate()).padStart(2, '0');
-    const formattedMonth = String(dateObject.getMonth() + 1).padStart(2, '0');
+    const formattedMonth = String(dateObject.getMonth()).padStart(2, '0');
     const formattedYear = String(dateObject.getFullYear());
   
     // Concatenate the parts with '-' separator to form the desired format
