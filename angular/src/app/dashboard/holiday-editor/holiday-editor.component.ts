@@ -162,7 +162,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
     const year = parts[2];
   
     // Create a new Date object with the given parts (Note: month is 0-indexed in JavaScript Date)
-    const dateObj = new Date(year, month - 1, day);
+    const dateObj = new Date(year, month, day);
   
     // Get the formatted date string in 'YYYY/MM/DD' format
     const formattedDate = dateObj.toISOString().split('T')[0];
