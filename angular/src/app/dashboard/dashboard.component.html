@@ -96,6 +96,6 @@
     </app-holiday-view>
   </div>
 
-  <app-holiday-editor class="holiday-editor" [city]='selectedCity'>
+  <app-holiday-editor *ngIf='selectedCity' class="holiday-editor" [city]='selectedCity'>
   </app-holiday-editor>
 </div>
