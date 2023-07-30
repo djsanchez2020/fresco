@@ -1,122 +1,184 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:53:42" id="0" hostname="d8ea28e3f92e" tests="32" errors="0" failures="3" time="5.414">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:55:32" id="0" hostname="d8ea28e3f92e" tests="30" errors="0" failures="2" time="2.242">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.345" classname=".HolidayEditorComponent TS file">
-    <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
+  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.168" classname=".TestHost holidayView"/>
+  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.065" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.046" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.043" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.05" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.05" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.04" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.047" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.033" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.033" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.054" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.043" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.029" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.042" classname=".HolidayViewComponent TS file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.063" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.176" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.137" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Display Holiday names in calendar" time="0.11" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.057" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.181" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.2" classname=".HolidayViewComponent HTML file">
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
     at &lt;Jasmine&gt;
-    at SafeSubscriber._next (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-</failure>
-    <failure type="">Error: Expected '20/02/2019' to be '05/06/2020'.
-    at &lt;Jasmine&gt;
-    at SafeSubscriber._next (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:298:42)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-</failure>
-  </testcase>
-  <testcase name="HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo " time="0.239" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate " time="0.219" classname=".HolidayEditorComponent TS file">
-    <failure type="">Error: Expected spy getSelectedHolidayInfo to have been called.
-    at &lt;Jasmine&gt;
-    at SafeSubscriber._next (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:283:21)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-</failure>
-    <failure type="">Error: Expected '20/02/2019' to be '02/06/2020'.
-    at &lt;Jasmine&gt;
-    at SafeSubscriber._next (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:284:42)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9877/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-</failure>
-  </testcase>
-  <testcase name="HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response " time="0.188" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.19" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday" time="0.207" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty" time="0.225" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday" time="0.195" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response " time="0.169" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday" time="0.188" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo " time="0.156" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService" time="0.135" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday" time="0.133" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign response data to holidayObj" time="0.143" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form" time="0.145" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo should not call getSelectedHolidayInfo() in HolidayService  when selected date is lesser than current date" time="0.16" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj" time="0.131" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true" time="0.107" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be false" time="0.146" classname=".HolidayEditorComponent TS file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Remove button should call removeHoliday()" time="0.198" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Test1 display error message for holidayName text field" time="0.174" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file New entry-> Add button should be displayed, save and remove button should not be displayed" time="0.154" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Add button to be enabled" time="0.14" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Add button should call addHoliday()" time="0.121" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed" time="0.121" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Test2 display error message for holidayName text field" time="0.182" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Add button to be disabled" time="0.165" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Click=>Save button should call updateHoliday()" time="0.17" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file remove button to be enabled" time="0.123" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Save button to be disabled" time="0.121" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="HolidayEditorComponent HTML file Save button to be enabled" time="0.153" classname=".HolidayEditorComponent HTML file"/>
-  <testcase name="TestHost when city change=> editor should call getSelectedHolidayInfo" time="0.171" classname=".TestHost">
-    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
-        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
-          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
-1. If 'mat-error' is an Angular component, then verify that it is part of this module.
-2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
-          &lt;!-- Display error message here --&gt;
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
-          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
-          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">1. If 'mat-label' is an Angular component, then verify that it is part of this module.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
-        &lt;mat-form-field appearance="outline" [style.fontSize.px]="15"&gt;
-          [ERROR -&gt;]&lt;mat-label&gt;Holiday Name&lt;/mat-label&gt;
-1. If 'mat-error' is an Angular component, then verify that it is part of this module.
-2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("holidayName" formControlName="holidayName"&gt;
-          &lt;!-- Display error message here --&gt;
-error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'mat-label' is not a known element:
-          &lt;input matInput id="holidayName" formControlName="holid"): ng:///DynamicTestModule/HolidayEditorComponent.html@12:10, 'mat-error' is not a known element:
-          [ERROR -&gt;]&lt;mat-error *ngIf="holidayEditor.controls['holida ... ...
-    at &lt;Jasmine&gt;
-    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
-    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
-    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
-    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
-    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
-    at &lt;Jasmine&gt;
-    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
-    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
-    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
-    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
-</failure>
-    <failure type="">TypeError: Cannot read property 'vw' of undefined
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:560:34)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
     at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
-    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
-    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
     at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.137" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.067" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.048" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.032" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Display date" time="0.11" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.033" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.068" classname=".HolidayViewComponent HTML file">
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.047" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.033" classname=".HolidayViewComponent HTML file"/>
   <system-out>
     <![CDATA[
 ]]>

@@ -18,6 +18,7 @@
         tdDisabled: !day.enabled,
         tdSelected: day.date === selectedDate
       }"
+      [disabled]="!day.enabled"
       (click)="sendSelectedDate(day.date)"
     >
       <!-- Display the date -->
