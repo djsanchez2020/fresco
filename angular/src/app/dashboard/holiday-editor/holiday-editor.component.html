@@ -24,13 +24,18 @@
 
       <mat-card-actions class="styleActionButton">
         <!-- Display Add button if it's a new entry. -->
-        <button class="btnWidth" mat-flat-button color="primary" [disabled]="!holidayEditor.valid" (click)="addHoliday()">Add</button>
+        <button class="btnWidth" mat-flat-button color="primary" 
+        *ngIf="!holidayObj.id"
+        [disabled]="!holidayEditor.valid" (click)="addHoliday()">Add</button>
 
         <!-- Display Save button if holiday exists -->
-        <button class="btnWidth" mat-flat-button color="primary" [disabled]="!holidayEditor.valid" (click)="updateHoliday()">Save</button>
+        <button class="btnWidth" mat-flat-button color="primary" 
+        *ngIf="holidayObj.id"
+        [disabled]="!holidayEditor.valid" (click)="updateHoliday()">Save</button>
 
         <!-- Display Remove button if holiday exists -->
-        <button class="btnWidth" mat-stroked-button color="accent" *ngIf="holidayObj.id" (click)="removeHoliday()">Remove</button>
+        <button class="btnWidth" mat-stroked-button color="accent" 
+        *ngIf="holidayObj.id" (click)="removeHoliday()">Remove</button>
 
       </mat-card-actions>
     </form>
