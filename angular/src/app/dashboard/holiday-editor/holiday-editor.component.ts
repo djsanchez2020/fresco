@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, SimpleChanges, OnChanges } from '@angular/core';
 import { HolidayService } from 'src/app/services/holiday.service';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
+import { subscribeOn } from 'rxjs/operators';
 
 @Component({
   selector: 'app-holiday-editor',
@@ -47,10 +48,21 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
       holidayName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z ]*$')])
     });
 
-    this.holidayServiceObj.userDate$.subscribe((date)=>{
-      this.selectedDate = date;
-      this.getSelectedHolidayInfo();
-    });
+    if(!this.holidayServiceObj?.userDate$){
+      setTimeout(() => {
+        this.holidayServiceObj?.userDate$.subscribe((date)=>{
+          this.selectedDate = date;
+          this.getSelectedHolidayInfo();
+        });
+      }, 300);
+    }else{
+      this.holidayServiceObj.userDate$.subscribe((date)=>{
+        this.selectedDate = date;
+        this.getSelectedHolidayInfo();
+      });
+    }
+    
+    
 
   }
 
@@ -76,6 +88,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
           this.holidayEditor.patchValue({
             holidayName: this.holidayObj?.holidayName || null
           });
+
         },
         (error) => {
           console.log(error);
@@ -140,7 +153,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
       (response) => {
         this.holidayObj = {};
         this.holidayEditor.reset();
-        this.getSelectedHolidayInfo();
+        //this.getSelectedHolidayInfo();
         this.holidayServiceObj.monthComponentNotify();
       },
       (error) => {
