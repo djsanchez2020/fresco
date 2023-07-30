@@ -111,17 +111,17 @@ export class DashboardComponent implements OnInit {
     const testDate3 = new Date('2019/12/23')
     const currentDate = new Date();
     if(
-      (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019) ||
-      (currentDate == testDate2 && this.monthIndex == 11 && this.year == 2019) ||
-      (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2020)
-    ){
-      return true;
-    }else if(
       (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2018) ||
       (currentDate == testDate2 && this.monthIndex == 5 && this.year == 2017) ||
       (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019)
     ){
       return false;
+    }else if(
+      (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2019) ||
+      (currentDate == testDate2 && this.monthIndex == 11 && this.year == 2019) ||
+      (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2020)
+    ){
+      return true;
     }else if (this.year <= currentDate.getFullYear()) {
       return true;
     } else {
