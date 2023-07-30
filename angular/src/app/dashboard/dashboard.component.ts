@@ -88,6 +88,9 @@ export class DashboardComponent implements OnInit {
    */
   monthNavigatorValidation(): boolean {
     const currentDate = new Date();
+    console.log('currentDate.getFullYear()', currentDate.getFullYear());
+    console.log('currentDate.getMonth()', currentDate.getMonth());
+    
     if (this.year < currentDate.getFullYear()) {
       return true;
     } else if (this.year === currentDate.getFullYear() && this.monthIndex <= currentDate.getMonth()) {
