@@ -91,12 +91,10 @@ export class DashboardComponent implements OnInit {
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
   
-    if (this.year < currentYear) {
-      return true;
-    } else if (this.year === currentYear && this.monthIndex < currentMonth) {
+    if (this.year <= currentYear && this.monthIndex < currentMonth) {
       return true;
     } else {
-      return true; // Return false in all other cases
+      return false; // Return false in all other cases
     }
   }
   
