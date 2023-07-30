@@ -130,12 +130,13 @@ export class DashboardComponent implements OnInit {
   yearNavigatorValidationDisabled(){
     let testDate = new Date('2019/11/23');
     let testDate2 = new Date('2019/12/23');
+    let testDate3 = new Date('2018/05/23');
     
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
 
-    if(currentDate == testDate){
+    if(currentDate == testDate || currentDate == testDate3){
       return true;
     }
 
