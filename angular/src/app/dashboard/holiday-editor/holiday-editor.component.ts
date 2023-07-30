@@ -68,7 +68,7 @@ export class HolidayEditorComponent implements OnInit, OnChanges {
         (response) => {
           this.holidayObj = response;
           this.holidayEditor.patchValue({
-            holidayName: this.holidayObj?.holidayName || ''
+            holidayName: this.holidayObj?.holidayName || null
           });
         },
         (error) => {
