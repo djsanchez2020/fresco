@@ -120,6 +120,13 @@ export class DashboardComponent implements OnInit {
       return true;
     }
 
+    /**
+     * enabled button
+     */
+    if(currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019){
+      return false;
+    }
+
     if(
       (currentDate == testDate1 && this.monthIndex == 11 && this.year == 2018) ||
       (currentDate == testDate2 && this.monthIndex == 5 && this.year == 2017) ||
