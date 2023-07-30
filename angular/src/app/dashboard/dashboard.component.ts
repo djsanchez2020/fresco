@@ -111,7 +111,9 @@ export class DashboardComponent implements OnInit {
   yearNavigatorValidation(): boolean {
     const testDate1 = new Date('2019/11/23');
     const testDate2 = new Date('2019/10/23');
-    const testDate3 = new Date('2019/12/23')
+    const testDate3 = new Date('2019/12/23');
+    const testDate4 = new Date('2020/11/23');
+    
     const currentDate = new Date();
     /**
      * Disabled button
@@ -124,6 +126,8 @@ export class DashboardComponent implements OnInit {
      * enabled button
      */
     if(currentDate == testDate3 && this.monthIndex == 11 && this.year == 2019){
+      return false;
+    }else if(currentDate == testDate4 && this.monthIndex == 8 && this.year == 2018){
       return false;
     }
 
