@@ -76,7 +76,7 @@ export class DashboardComponent implements OnInit {
   navigationArrowYear(flag: number) {
     if (flag === 0) {
       this.year--;
-    } else if (flag === 1) {
+    } else if (flag === 1 && this.year < 2020) {
       this.year++;
     }
   }
