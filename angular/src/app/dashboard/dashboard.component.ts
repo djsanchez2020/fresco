@@ -87,6 +87,34 @@ export class DashboardComponent implements OnInit {
    * Return false to enable
    */
   monthNavigatorValidation(): boolean {
+
+    let testDate = this.transformDateFormat(new Date('2019/11/23'));
+    let testDate2 = this.transformDateFormat(new Date('2019/5/23'));
+    let testDate3 = this.transformDateFormat(new Date('2019/12/23'));
+    
+    const currentDate = this.transformDateFormat(new Date());
+
+    if(currentDate == testDate || currentDate == testDate2 || currentDate == testDate3 ){
+      return true;
+    }
+
+    /*if(currentDate == testDate2){
+      return false;
+    }*/
+
+
+    const currentDate2 = new Date();
+    const currentYear = currentDate2.getFullYear();
+    const currentMonth = currentDate2.getMonth();
+  
+    if (this.year <= currentYear && this.monthIndex < currentMonth) {
+      return true;
+    } else {
+      return false; // Return false in all other cases
+    }
+  }
+
+  monthNavigatorValidationDisabled(): boolean {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
