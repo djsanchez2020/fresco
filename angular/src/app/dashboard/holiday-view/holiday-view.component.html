@@ -18,8 +18,7 @@
         tdDisabled: !day.enabled,
         tdSelected: day.date === selectedDate
       }"
-      [disabled]="!day.enabled"
-      (click)="sendSelectedDate(day.date)"
+      (click)="day.enabled ? sendSelectedDate(day.date): return"
     >
       <!-- Display the date -->
       <div class="mat-h1">{{ day.date.slice(0, 2) }}</div>

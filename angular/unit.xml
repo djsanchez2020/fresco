@@ -1,184 +1,1962 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:55:32" id="0" hostname="d8ea28e3f92e" tests="30" errors="0" failures="2" time="2.242">
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2023-07-30T18:58:05" id="0" hostname="d8ea28e3f92e" tests="30" errors="1" failures="30" time="1.677">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
   </properties>
-  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.168" classname=".TestHost holidayView"/>
-  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.065" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.046" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.043" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.05" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.05" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.04" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.047" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.033" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.033" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.054" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.043" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.029" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.042" classname=".HolidayViewComponent TS file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.063" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.176" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.137" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Display Holiday names in calendar" time="0.11" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.057" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.181" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.2" classname=".HolidayViewComponent HTML file">
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.208" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    <failure type="">TypeError: Cannot set property 'monthIndex' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:246:29)
     at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:358:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayViewComponent HTML file Testing number of .tdDisabled css class" time="0.137" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.067" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.048" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.032" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Display date" time="0.11" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.033" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.068" classname=".HolidayViewComponent HTML file">
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+  <testcase name="HolidayViewComponent HTML file Test1 default date element to be selected" time="0.066" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
 </failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    <failure type="">TypeError: Cannot read property 'ngOnInit' of undefined
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:259:17)
     at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
     at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
     at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
-</failure>
-    <failure type="">Error: Expected spy sendSelectedDate not to have been called.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:375:28)
-    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
-    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
 </failure>
   </testcase>
-  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.047" classname=".HolidayViewComponent HTML file"/>
-  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.033" classname=".HolidayViewComponent HTML file"/>
+  <testcase name="HolidayViewComponent HTML file Test2 default date element to be selected" time="0.055" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'monthIndex' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:272:27)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain css class" time="0.058" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:197:38)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.054" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:328:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 42 .td-month" time="0.065" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'monthGenerator' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:218:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Testing number of .tdEnabled css class" time="0.059" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'monthIndex' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:230:29)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.063" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:347:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick date element=> selected date element should have .tdSelected css class " time="0.06" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:289:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file calendar-header should contain header" time="0.053" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'debugElement' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:187:38)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Test1 onClick .tdEnabled element=> should call sendSelectedDate function with DateInMonth object" time="0.074" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:309:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file calendar-body should contain 6 rows" time="0.042" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'monthGenerator' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:209:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Display Holiday names in calendar" time="0.065" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'monthIndex' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:417:29)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file HolidayName=>Testing holidayBoxSelected css class and holidayBoxUnSelected css class" time="0.061" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'monthIndex' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:438:29)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Test2 onClick .tdDisabled element=> should not call sendSelectedDate function" time="0.042" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:364:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent HTML file Display date" time="0.058" classname=".HolidayViewComponent HTML file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'monthIndex' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:382:29)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.043" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'detectChanges' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:71:15)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file monthViewUpdateNotifier$ should call monthGenerator when monthViewUpdateNotifier updates" time="0.048" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:79:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should send current date(DD/MM/YYYY) using sendUserSelectedDateId service function" time="0.036" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'ngOnInit' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:64:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file sendSelectedDate() should call sendUserSelectedDateId" time="0.032" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'sendSelectedDate' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:172:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file monthGenerator should call holidayInitializer after generating objects" time="0.05" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:128:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file holidayInitializer should use getHolidays() in HolidayService to get holiday list" time="0.038" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'city' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:137:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test1 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.044" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'city' of undefined
+    at &lt;Jasmine&gt;
+    at http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:146:21
+    at &lt;Jasmine&gt;
+    at http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+    at new ZoneAwarePromise (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+    at __awaiter (http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:144:115)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test2 getHolidays() => response data should be converted and intialized to responseDateObjs" time="0.038" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'city' of undefined
+    at &lt;Jasmine&gt;
+    at http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:159:21
+    at &lt;Jasmine&gt;
+    at http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+    at new ZoneAwarePromise (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+    at __awaiter (http://localhost:9877/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:157:116)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test3 monthGenerator should generate Objects" time="0.042" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:120:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test1 monthGenerator should generate Objects" time="0.041" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:104:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test2 monthGenerator should generate Objects" time="0.049" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'year' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:112:21)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test1 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.064" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'ngOnInit' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:91:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HolidayViewComponent TS file Test2 ng OnInit should assign current date date(DD/MM/YYYY) to selectedDate" time="0.038" classname=".HolidayViewComponent TS file">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'ngOnInit' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:98:17)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TestHost holidayView when city|year|month change=> holiday view component should call monthGenerator" time="0.031" classname=".TestHost holidayView">
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+Error: Template parse errors:
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+Error: Template parse errors:
+Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+        tdSelected: day.date === selectedDate
+      }"
+      [ERROR -&gt;][disabled]="!day.enabled"
+      (click)="sendSelectedDate(day.date)"
+    &gt;
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'disabled' since it isn't a known property of 'div'. ("
+"): ng:///DynamicTestModule/HolidayViewComponent.html@20:6 ] })
+    at syntaxError (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2281:1)
+    at TemplateParser.parse (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11649:1)
+    at JitCompiler._parseTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26599:1)
+    at JitCompiler._compileTemplate (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26587:61)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26531:1)
+    at http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26451:1
+    at Object.then (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2272:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9877/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:26449:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'vw' of undefined
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/src/app/dashboard/holiday-view/holiday-view.component.spec.ts:498:34)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+    at ProxyZoneSpec.onInvoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+    at ZoneDelegate.invoke (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at Zone.run (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+    at runInTestZone (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9877/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
   <system-out>
     <![CDATA[
 ]]>
