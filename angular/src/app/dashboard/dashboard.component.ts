@@ -128,15 +128,13 @@ export class DashboardComponent implements OnInit {
   }
 
   yearNavigatorValidationDisabled(){
-    let testDate = new Date('2019/11/23');
-    let testDate2 = new Date('2019/12/23');
-    let testDate3 = new Date('2018/05/23');
-    let testDate4 = new Date('2020/11/23');
+    let testDate = this.transformDateFormat(new Date('2019/11/23'));
+    let testDate2 = this.transformDateFormat(new Date('2019/12/23'));
+    let testDate3 = this.transformDateFormat(new Date('2018/05/23'));
+    let testDate4 = this.transformDateFormat(new Date('2020/11/23'));
     
     
-    const currentDate = new Date();
-    const currentYear = currentDate.getFullYear();
-    const currentMonth = currentDate.getMonth();
+    const currentDate = this.transformDateFormat(new Date());
 
     if(currentDate == testDate || currentDate == testDate3){
       return true;
@@ -182,5 +180,15 @@ export class DashboardComponent implements OnInit {
   signOut() {
     this.holidayServiceObj.signOut();
     //this.route.navigate(['/login']);
+  }
+
+  transformDateFormat(dateObject: Date): string {
+    // Get the day, month, and year from the date object
+    const formattedDay = String(dateObject.getDate()).padStart(2, '0');
+    const formattedMonth = String(dateObject.getMonth()).padStart(2, '0');
+    const formattedYear = String(dateObject.getFullYear());
+  
+    // Concatenate the parts with '-' separator to form the desired format
+    return `${formattedYear}-${formattedMonth}-${formattedDay}`;
   }
 }
