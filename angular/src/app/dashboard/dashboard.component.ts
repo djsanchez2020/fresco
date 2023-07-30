@@ -39,9 +39,11 @@ export class DashboardComponent implements OnInit {
    * get cities
    */
   ngOnInit() {
-    const setDate = new Date();
+    const setDate = new Date("2020/12/23");
     this.monthIndex = setDate.getMonth();
     this.year = setDate.getFullYear();
+
+    console.log("this.monthIndex", this.monthIndex);
     this.getCities();
   }
 
