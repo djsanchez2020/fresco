@@ -122,11 +122,13 @@ export class DashboardComponent implements OnInit {
       (currentDate == testDate3 && this.monthIndex == 11 && this.year == 2020)
     ){
       return true;
-    }else if (this.year <= currentDate.getFullYear()) {
+    }else{
+     console.error("fallo", currentDate); 
+    }/*else if (this.year <= currentDate.getFullYear()) {
       return true;
     } else {
       return false;
-    }
+    }*/
   }
 
   /**
